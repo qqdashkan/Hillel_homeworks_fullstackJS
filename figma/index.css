@@ -5,9 +5,38 @@ body {
     font-size: 16px;
 }
 
+.wrapper {
+    width: 1120;
+    height: 700;
+    display: block;
+    margin-left: 400px;
+    margin-right: auto;
+}
+
+.hero_wrapper {
+    width: 1120;
+    height: 700;
+    display: block;
+    margin: auto 400px;
+    text-align: center;
+}
+
+.hero_wrapper p {
+    width: 500px;
+    text-align: center;
+    margin: 50px auto 100px auto;
+}
+
 header {
     background-color: #EEEFF1;
+    margin-bottom: 50px;
+}
 
+header p {
+    font-size: 16px;
+    max-width: 540px;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 menu {
@@ -26,59 +55,36 @@ button {
     margin-bottom: 140px;
 }
 
-div.wrapper {
-    height: 700;
-    margin: auto 400px;
-    display: block;
-    margin-left: 400px;
-    margin-right: auto;
-
-}
 
 h1 {
     font-size: 48px;
-    margin: 60px auto;
+    margin-top: 60px;
     line-height: 78px;
 }
 
 h2 {
     font-size: 32px;
-    margin: 50px auto;
+    margin: 100px auto 50px auto;
     line-height: 32px;
     text-align: center;
 }
 
-p {
-    font-size: 16px;
-    max-width: 540px;
-    line-height: 26px;
-    font-weight: 400;
-}
-
-.second, .video {
-    display: block;
-    position: relative;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.second p, .video p {
-    margin: 100px auto;
-}
-
 section {
     background-color: #34547A;
+    display: block;
+    height: 250px;
+    color: #fff;
 }
 
-div.icons {
+.new_wrapper {
+    width: 1120;
     display: block;
     margin-left: 400px;
     margin-right: auto;
-    position: relative;
-    color: #fff;
-    height: 250px;
+}
+
+.new_wrapper p {
+    line-height: 26px;
 }
 
 img {
@@ -94,7 +100,6 @@ figure {
     margin-top: 100px;
 }
 
-
 footer {
     background-color: #34547A;
     height: 150px;
@@ -106,6 +111,7 @@ h3 {
     position: relative;
     font-size: 21px;
     margin: 10px auto;
-    left: 400px;
     top: 50px;
 }
+
+
