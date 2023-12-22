@@ -1,0 +1,111 @@
+body {
+    min-width: 1920;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header {
+    background-color: #EEEFF1;
+
+}
+
+menu {
+    word-spacing: 20px;
+    padding: 80px 0;
+}
+
+button {
+    background-color: #34547A;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    width: 225px;
+    height: 65px;
+    margin-top: 60px;
+    margin-bottom: 140px;
+}
+
+div.wrapper {
+    height: 700;
+    margin: auto 400px;
+    display: block;
+    margin-left: 400px;
+    margin-right: auto;
+
+}
+
+h1 {
+    font-size: 48px;
+    margin: 60px auto;
+    line-height: 78px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 50px auto;
+    line-height: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    max-width: 540px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.second, .video {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.second p, .video p {
+    margin: 100px auto;
+}
+
+section {
+    background-color: #34547A;
+}
+
+div.icons {
+    display: block;
+    margin-left: 400px;
+    margin-right: auto;
+    position: relative;
+    color: #fff;
+    height: 250px;
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+}
+
+figure {
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+
+footer {
+    background-color: #34547A;
+    height: 150px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+h3 {
+    position: relative;
+    font-size: 21px;
+    margin: 10px auto;
+    left: 400px;
+    top: 50px;
+}
