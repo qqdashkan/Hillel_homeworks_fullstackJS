@@ -598,8 +598,8 @@ h3 {
 /* subscribe */
 
 .subscribe {
-    width: 1140px;
-    margin: 0 auto 70px;
+    width: 1090px;
+    margin: 0 auto;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
 }
