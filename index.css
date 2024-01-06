@@ -1,0 +1,736 @@
+body {
+    width: 1440px;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+}
+
+
+
+h1{
+    margin: 0 auto 20px;
+    max-width: 430px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+h2 {
+    color: #0B132A;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+    bottom: 15px;
+}
+
+h3 {
+    color: #0B132A;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+/* header section */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 50px auto;
+    font-size: 20px;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper p {
+    color: #0B132A;
+    font-weight: 500;
+}
+
+.wrapper ul {
+    display: inline-flex;
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.btn a {
+    color: #0B132A;
+}
+
+.wrapper button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 45px;
+    color: #F53855;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+    background-color: rgba(28,28,28,0);
+}
+
+
+.icon {
+    display: flex;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 35px;
+    height: 36px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #F53838;
+    background: url(main-logo.svg) no-repeat;
+
+}
+
+.icon-Vector {
+    background-position: 0 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* first block */
+
+.hero {
+    display: flex;
+    width: 1140px;
+    margin: 120px auto;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title {
+    display: flex;
+    max-width: 555px;
+    flex-direction: column;
+    gap: 20px
+}
+
+.title p {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    color: #0B132A;
+}
+
+.title article {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.title button {
+    margin: 30px 0;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #F53838;
+    border-color: rgba(28,28,28,0);
+    color: #FFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.illustration {
+    background: url("Illustration\ 1.svg");
+    width: 611px;
+}
+
+/* infographic block */
+
+.infographic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    height: 200px;
+    border-radius: 10px;
+    stroke: #EEEFF2;
+    border: 2px solid #EEEFF2;
+    margin: 0 auto;
+    color: #0B132A;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.first,
+.second,
+.third {
+    display: flex;
+    height: 125px;
+    align-items: center;
+}
+
+.first,
+.second {
+    margin: 0 50px 0 100px;
+    align-items: center;
+    height: 125px;
+    border-right: 2px solid #EEEFF2;
+}
+
+.first{
+    margin-left: 70px;
+    padding-right: 80px;
+}
+
+.second {
+    position: relative;
+    right: 150px;
+    padding: 0 80px;
+}
+
+.third {
+    position: relative;
+    right: 150px;
+}
+
+.infographic p {
+    position: relative;
+    bottom: 15px;
+}
+
+.infographic article {
+    position: relative;
+    top: 15px;
+    right: 50px;
+}
+
+.infographic span {
+    margin: 0 30px;
+    display: block;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #FFECEC;
+}
+
+.infographic article {
+    font-size: 20px;
+    color: #4F5665;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.icon_user {
+    display: inline-block;
+    margin: 13px 15px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #F53838;
+    background: url(heroicons_sm-user.svg) no-repeat;
+}
+
+/* features block */
+
+.features {
+    display: flex;
+    width: 1120px;
+    margin: 150px auto;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.features article {
+    max-width: 427px;
+    margin: 5px 0;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.features ul {
+    list-style-image: url('bx_bxs-check-circle.svg');
+    display: flex;
+    flex-direction: column;
+}
+
+.features li {
+    margin: -10px 0;
+    list-style-position: inside;
+    font-size: 14px;
+}
+
+.features p {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    bottom: 37px;
+    left: 30px;
+}
+
+.image {
+    background: url("Illustration\ 2.png") no-repeat;
+    width: 611px;
+}
+
+ /* choose plan */ 
+
+.plans_block {
+    text-align: center;
+    width: 1120px;
+    margin: 200px auto;
+}
+
+.plans_block article {
+    max-width: 555px;
+    margin: 20px auto;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.free_plan,
+.standard_plan,
+.premium_plan {
+    display: block;
+    width: 330px;
+    height: 760px;
+    float: left;
+    margin: 60px 20px 150px;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+}
+
+.free_plan h2,
+.standard_plan h2,
+.premium_plan h2 {
+    margin: 50px auto 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.standard_plan img,
+.free_plan img,
+.premium_plan img {
+    width: 145px;
+    margin: 70px auto 0 ;
+}
+
+.plans_block ul {
+    display: flex;
+    flex-direction: column;
+    list-style-image: url('Check.svg');
+    gap: 20px;
+    margin: 0 0 0 69px;
+}
+
+.plans_block p {
+    text-align: start;
+    margin: 0 20px;
+    color: #4F5665;
+}
+
+.premium_plan h3 {
+    position: relative;
+    bottom: 13px;
+    margin: 80px 55px 115px 0;
+}
+
+.standard_plan h3 {
+    position: relative;
+    bottom: 13px;
+    margin: 120px 50px 115px 0;
+}
+
+.free_plan h3 {
+    position: relative;
+    bottom: 19px;
+    margin: 160px 0 113px 0;
+    padding-bottom: 30px;
+}
+
+.premium_plan h5,
+.standard_plan h5 {
+    color: #4F5665;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    bottom: 160px;
+    left: 23px;
+}
+
+.premium_plan h5 {
+    left: 30px;
+}
+
+.plans_block button {
+    position: relative;
+    bottom: 140px;
+    font-family: 'Rubik', sans-serif;
+    color: #F53838;
+    font-size: 16px;
+    font-weight: 700;
+    width: 178px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid #F53838;
+    background-color: rgba(28,28,28,0);
+}
+
+/* map */
+
+.map {
+    text-align: center;
+    width: 1190px;
+    margin: 200px auto 0;
+}
+
+.map h1 {
+    max-width: 380px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.map article {
+    max-width: 555px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #4F5665;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.icon-map {
+    margin: 155px auto 0;
+    display: block;
+    width: 1060px;
+    height: 550px;
+    background: url(map.svg) no-repeat;
+}
+
+.brands {
+    display: block;
+    margin: 0 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 1140px;
+}
+
+/* reviews */
+
+.reviews {
+    text-align: center;
+    width: 1190px;
+    margin: 100px 0 100px 150px;
+    overflow: hidden;
+}
+
+.reviews h1{
+    margin: 0 auto 20px;
+    max-width: 447px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.reviews article {
+    max-width: 555px;
+    margin: 0 auto;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.customer_one,
+.customer_two,
+.customer_three {
+    position: relative;
+    padding-top: 30px;
+    float: left;
+    margin: 60px 25px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+}
+
+.customer_three {
+    position: absolute;
+    left: 1050px;
+}
+
+.customer_one img,
+.customer_two img,
+.customer_three img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.customer_one h3,
+.customer_two h3,
+.customer_three h3 {
+    width: 142px;
+    font-size: 18px;
+}
+
+.customer_one h6,
+.customer_two h6,
+.customer_three h6 {
+    position: relative;
+    top: 20px;
+    right: 50px;
+}
+
+.customer_one p,
+.customer_two p,
+.customer_three p {
+    position: relative;
+    right: 150px;
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    bottom: 5px;
+    width: 130px;
+}
+
+.customer_two p {
+    position: relative;
+    right: 170px;
+}
+
+.customer_one article,
+.customer_two article,
+.customer_three article {
+    color: #0B132A;
+    width: 340px;
+    text-align: start;
+    margin: 0 0 0 30px;
+}
+
+.customer_one span,
+.customer_two span,
+.customer_three span {
+    margin: 0 0 0 30px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.icon_star {
+    position: relative;
+    top: 19px;
+    right: 50px;
+    width: 15px;
+    height: 15px;
+    stroke: currentColor;
+    fill: currentColor;
+    background: url(ant-design_star-filled.svg) no-repeat;
+}
+
+.bullet div {
+    margin: 380px 0 0 25px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background: #F53838;
+    border-radius: 10px;
+}
+
+.bullet span {
+    position: relative;
+    right: 455px;
+    display: inline-flex;
+    margin: 0 15px 0 0;
+    bottom: 14px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #DDE0E4;
+}
+
+.reviews button {
+    position: relative;
+    bottom: 50px;
+    left: 480px;
+    color: #F53838;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #F53838;
+    background-color: rgba(28,28,28,0);
+    margin: 0 0 0 10px;
+}
+
+/* subscribe */
+
+.subscribe {
+    width: 1140px;
+    margin: 0 auto 70px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+
+.subscribe h1 {
+    width: 372px;
+    text-align: left;
+    margin: 45px 0 20px 70px;
+}
+
+.subscribe article {
+    color: #4F5665;
+    margin: 0 0 0 70px;
+}
+
+.subscribe button {
+    position: relative;
+    bottom: 86px;
+    margin: 0 0 0 820px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #F53838;
+    color: #FFF;
+    border-color: rgba(28,28,28,0);
+}
+
+/* footer */
+
+
+.footer {
+    width: 1090px;
+    margin: 100px auto 0;
+    color: #0B132A;
+    font-size: 20px;
+}
+
+.footer article {
+    width: 340px;
+    margin: 20px 0;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.social > .icon-Facebook-icon{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #FFF;
+    background-image: url('Facebook-icon.svg');
+  }
+  .icon-Facebook-icon {
+    width: 35px;
+    fill: #FFF;
+    background-position: 0 0;
+  }
+
+.social > .icon-Instagram {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    stroke-width: 0;
+    stroke: currentColor;
+    background: url(instagram-icon.svg) no-repeat;
+}
+
+.social > .icon-Twitter {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #FFF;
+    background: url(Twitter.svg) no-repeat;
+}
+
+.footer nav {
+    display: inline-flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation p {
+    color: #0B132A;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.social p {
+    margin: 30px 0;
+    font-family: 'Rubik', sans-serif;
+    color: #AFB5C0;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.navigation {
+    position: relative;
+    width: 1090px;
+    margin: 0 150px 0 720px;
+    bottom: 210px;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 10px;
+    margin: 40px 126px 0 0;
+    color: #4F5665;
+}
+
