@@ -248,7 +248,7 @@ h3 {
 
 .icon_location {
     display: inline-block;
-    margin: 13px 15px;
+    margin: 15px 16px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -258,7 +258,7 @@ h3 {
 
 .icon_servers {
     display: inline-block;
-    margin: 13px 15px;
+    margin: 15px 16px;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
