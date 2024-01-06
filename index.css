@@ -4,15 +4,6 @@ body {
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
 }
 
-.box {
-    background: url(Background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: auto;
-    background-clip: content-box;
-    height: 565px;
-}
 
 h1{
     margin: 0 auto 20px;
@@ -253,6 +244,26 @@ h3 {
     fill: currentColor;
     color: #F53838;
     background: url(heroicons_sm-user.svg) no-repeat;
+}
+
+.icon_location {
+    display: inline-block;
+    margin: 13px 15px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #F53838;
+    background: url(gridicons_location.svg) no-repeat;
+}
+
+.icon_servers {
+    display: inline-block;
+    margin: 13px 15px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #F53838;
+    background: url(bx_bxs-server.svg) no-repeat;
 }
 
 /* features block */
