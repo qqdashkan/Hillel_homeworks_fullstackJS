@@ -595,6 +595,10 @@ h3 {
     margin: 0 0 0 10px;
 }
 
+.material-symbols-outlined {
+    margin: 10px auto;
+}
+
 /* subscribe */
 
 .subscribe {
@@ -619,7 +623,7 @@ h3 {
 .subscribe button {
     position: relative;
     bottom: 86px;
-    margin: 0 0 0 820px;
+    margin: 0 0 0 750px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 16px;
