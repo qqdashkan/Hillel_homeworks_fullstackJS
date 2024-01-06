@@ -721,8 +721,8 @@ h3 {
 .navigation {
     position: relative;
     width: 1090px;
-    margin: 0 150px 0 720px;
-    bottom: 210px;
+    margin: 0 150px 0 700px;
+    bottom: 280px;
 }
 
 .navigation ul {
