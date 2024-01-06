@@ -4,7 +4,15 @@ body {
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
 }
 
-
+.box {
+    background: url(Background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-clip: content-box;
+    height: 565px;
+}
 
 h1{
     margin: 0 auto 20px;
@@ -601,13 +609,15 @@ h3 {
 
 /* subscribe */
 
+
+
 .subscribe {
     width: 1090px;
     margin: 0 auto;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
-}
 
+}
 
 .subscribe h1 {
     width: 372px;
@@ -637,12 +647,23 @@ h3 {
     border-color: rgba(28,28,28,0);
 }
 
+img.background {
+    width: 100%;
+    height: 365px;
+    position: absolute;
+}  
+
+.subscribe img {
+    position: absolute;
+}
+
+
 /* footer */
 
-
 .footer {
+    position: relative;
     width: 1090px;
-    margin: 100px auto 0;
+    margin: 100px auto -100px;
     color: #0B132A;
     font-size: 20px;
 }
@@ -656,22 +677,35 @@ h3 {
     line-height: 30px;
 }
 
-.social > .icon-Facebook-icon{
+.social {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.social p {
+    margin: 50px 0 0 -150px;
+    font-family: 'Rubik', sans-serif;
+    color: #AFB5C0;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.icon-Facebook {
     display: inline-block;
     width: 34px;
     height: 34px;
     stroke-width: 0;
     stroke: currentColor;
     fill: #FFF;
-    background-image: url('Facebook-icon.svg');
-  }
-  .icon-Facebook-icon {
-    width: 35px;
-    fill: #FFF;
-    background-position: 0 0;
-  }
+    color: #FFF;
+    background: url(Facebook-icon.svg) no-repeat;
+    margin-right: 10px;
+}
 
-.social > .icon-Instagram {
+.icon-Instagram {
     margin: 0 10px 0 0;
     display: inline-block;
     width: 35px;
@@ -681,7 +715,7 @@ h3 {
     background: url(instagram-icon.svg) no-repeat;
 }
 
-.social > .icon-Twitter {
+.icon-Twitter {
     margin: 0 10px 0 0;
     display: inline-block;
     width: 35px;
@@ -712,21 +746,11 @@ h3 {
     line-height: 30px;
 }
 
-.social p {
-    margin: 30px 0;
-    font-family: 'Rubik', sans-serif;
-    color: #AFB5C0;
-    text-align: start;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
 .navigation {
     position: relative;
     width: 1090px;
     margin: 0 150px 0 700px;
-    bottom: 280px;
+    bottom: 70px;
 }
 
 .navigation ul {
@@ -734,7 +758,7 @@ h3 {
     flex-direction: column;
     float: left;
     gap: 10px;
-    margin: 40px 126px 0 0;
+    margin: -40px 106px 0 0;
     color: #4F5665;
 }
 
