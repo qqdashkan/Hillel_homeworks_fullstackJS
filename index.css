@@ -6,27 +6,24 @@ body {
 
 
 h1{
-    margin: 0 auto 20px;
-    max-width: 430px;
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px; 
+}
+
+h2 {
+    max-width: 400px;
     color: #0B132A;
     font-size: 35px;
     font-weight: 500;
     line-height: 50px;
 }
 
-h2 {
-    color: #0B132A;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-    position: relative;
-    bottom: 15px;
-}
-
 h3 {
     color: #0B132A;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 30px;
 }
 
@@ -50,31 +47,33 @@ h3 {
 
 .wrapper ul {
     display: inline-flex;
-    color: #4F5665;
-    font-size: 14px;
-    font-weight: 400;
     justify-content: space-between;
     gap: 40px;
 }
 
+
 .wrapper a {
     text-decoration: none;
     font-size: 16px;
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.btn {
-    font-weight: 500;
+.menu {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
 
-.btn a {
+.menu a {
     color: #0B132A;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.wrapper button {
+.red_btn a {
+    padding: 13px 45px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     width: 150px;
@@ -162,6 +161,7 @@ h3 {
 /* infographic block */
 
 .infographic {
+    padding: 0 0 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,64 +176,55 @@ h3 {
     font-weight: 700;
 }
 
-.first,
-.second,
-.third {
+.users,
+.locations,
+.servers {
     display: flex;
     height: 125px;
     align-items: center;
+    float: right;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 130px 0 50px;
 }
 
-.first,
-.second {
-    margin: 0 50px 0 100px;
-    align-items: center;
+.users,
+.locations {
+    margin: 0 auto;
+    align-items: left;
     height: 125px;
     border-right: 2px solid #EEEFF2;
+    text-align: left;
 }
 
-.first{
-    margin-left: 70px;
-    padding-right: 80px;
-}
+.users span,
+.locations span,
+.servers span {
 
-.second {
-    position: relative;
-    right: 150px;
-    padding: 0 80px;
-}
-
-.third {
-    position: relative;
-    right: 150px;
-}
-
-.infographic p {
-    position: relative;
-    bottom: 15px;
-}
-
-.infographic article {
-    position: relative;
-    top: 15px;
-    right: 50px;
-}
-
-.infographic span {
-    margin: 0 30px;
+    margin: 0 auto;
     display: block;
-    position: relative;
     width: 55px;
     height: 55px;
     border-radius: 50%;
     background: #FFECEC;
 }
 
-.infographic article {
+.users h3,
+.locations h3,
+.servers h3 {
+    text-align: left;
+    margin: 0 7px 30px 0;
+}
+
+.users p,
+.locations p,
+.servers p {
+    margin-left: -85px;
+    margin-top: 25px;
     font-size: 20px;
     color: #4F5665;
     font-weight: 400;
-    line-height: 30px;
+    text-align: 30px;
 }
 
 .icon_user {
@@ -319,8 +310,13 @@ h3 {
 
 .plans_block {
     text-align: center;
-    width: 1120px;
-    margin: 200px auto;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.plans_block h2 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .plans_block article {
@@ -336,7 +332,7 @@ h3 {
 .standard_plan,
 .premium_plan {
     display: block;
-    width: 330px;
+    width: 320px;
     height: 760px;
     float: left;
     margin: 60px 20px 150px;
@@ -430,12 +426,7 @@ h3 {
     margin: 200px auto 0;
 }
 
-.map h1 {
-    max-width: 380px;
-    color: #0B132A;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 50px;
+.map h2 {
     margin: 0 auto;
 }
 
@@ -475,13 +466,8 @@ h3 {
     overflow: hidden;
 }
 
-.reviews h1{
-    margin: 0 auto 20px;
-    max-width: 447px;
-    color: #0B132A;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 50px;
+.reviews h2{
+        margin: 0 auto;
 }
 
 .reviews article {
@@ -620,8 +606,6 @@ h3 {
 
 /* subscribe */
 
-
-
 .subscribe {
     width: 1090px;
     margin: 0 auto;
@@ -630,7 +614,7 @@ h3 {
 
 }
 
-.subscribe h1 {
+.subscribe h2 {
     width: 372px;
     text-align: left;
     margin: 45px 0 20px 70px;
