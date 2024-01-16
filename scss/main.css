@@ -1,6 +1,6 @@
 .map {
-  max-width: 1190px;
   margin: 0 auto;
+  max-width: 1190px;
   text-align: center;
 }
 .map h2 {
@@ -50,4 +50,13 @@
   animation: neon-2 1s ease-out infinite alternate;
   cursor: pointer;
   background-color: #F53838;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #F53855, 0 0 70px #F53855, 0 0 80px #F53855, 0 0 100px #F53855, 0 0 150px #F53855;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #F53855, 0 0 35px #F53855, 0 0 40px #F53855, 0 0 50px #F53855, 0 0 75px #F53855;
+  }
 }/*# sourceMappingURL=main.css.map */
