@@ -1,0 +1,44 @@
+$borderRadius: 10px;
+
+
+.subscribe {
+    width: 1100px;
+    margin: 0 auto;
+    border: 2px solid #DDDDDD;
+    border-radius: $borderRadius;
+
+    h2 {
+        width: 372px;
+        text-align: left;
+        margin: 45px 0 20px 70px;
+    }
+
+    article {
+        color: #4F5665;
+        margin: 0 0 0 70px;
+    }
+
+    button {
+        position: relative;
+        bottom: 86px;
+        margin: 0 0 0 750px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        width: 250px;
+        height: 60px;
+        border-radius: $borderRadius;
+        background-color: #FD7B7C;
+        color: #FFF;
+        border-color: rgba(28,28,28,0);
+    }
+
+    button:hover {
+        animation: neon-2 1s ease-out infinite alternate;
+        cursor: pointer;
+        background-color: #F53838;
+    }
+
+}
