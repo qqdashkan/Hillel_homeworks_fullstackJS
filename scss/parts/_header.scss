@@ -1,0 +1,31 @@
+$btnColor: rgba(28,28,28,0);
+
+header {
+    font-family: 'Noto Sans', sans-serif;
+    background: url(assets/Decore.png) right no-repeat;
+    height: 700px;
+    font-size: 17px;
+}
+
+nav {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 40px;
+
+    button {
+        font-weight: 500;
+        display: inline-flex;
+        align-items: baseline;
+        gap: 5px;
+        background-color: $btnColor;
+        border: $btnColor;
+    }
+
+    ul {
+        color: #212832;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: baseline;
+    }
+}

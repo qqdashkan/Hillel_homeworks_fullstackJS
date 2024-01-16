@@ -27,34 +27,11 @@ h3 {
     line-height: 30px;
 }
 
-header {
-    font-family: 'Noto Sans', sans-serif;
-    background: url(assets/Decore.png) right no-repeat;
-    height: 700px;
-}
-
 .wrapper {
     width: 1160px;
     margin: 50px auto;
     display: inline-flex;
     justify-content: center;
-}
-
-nav {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 40px;
-}
-
-nav button {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    display: inline-flex;
-    align-items: baseline;
-    gap: 5px;
-    background-color: rgba(28,28,28,0);
-    border: rgba(28,28,28,0);
 }
 
 ul a {
@@ -90,14 +67,6 @@ li a {
     background-position: center;
     background-repeat: no-repeat;
     overflow: auto;
-}
-
-nav ul {
-    color: #212832;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: baseline;
 }
 
 .hero-content object {
@@ -852,67 +821,6 @@ nav ul {
     margin: 150px 135px 0 135px;
 }
 
-.subscribe {
-    padding-top: 79px;
-    text-align: center;
-    width: 1170px;
-    height: 407px;
-    border-radius: 129px 20px 20px 20px;
-    background: #E6E6FA;
-}
-
-.subscribe h3 {
-    margin: 0 auto;
-    max-width: 859px;
-    font-size: 33px;
-    font-weight: 600;
-    line-height: 54px;
-}
-
-.subscribe input {
-    padding-left: 66px;
-    border-color: rgba(28,28,28,0);
-    color: #39425D;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    background: #FFF;
-    width: 421px;
-    height: 65px;
-    border-radius: 10px;
-    border-color: rgba(28,28,28,0);
-}
-
-.subscribe i {
-    margin-left: 31px;
-    width: 21px;
-    height: 18px;
-}
-
-.subscribe form {
-    width: 650px;
-    border-radius: 10px;
-    margin: 74px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-
-}
-
-.subscribe button {
-    color: #FFF;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 500;
-    width: 180px;
-    height: 68px;
-    border-radius: 10px;
-    border-color: rgba(28,28,28,0);
-    background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
-    transition: background-color 1s linear;
-}
-
 /* animation */
 
 .subscribe button:hover {
@@ -968,33 +876,6 @@ nav ul {
     height: 66px;
     margin-bottom: 19px;
     background: url(icons/Jadoo..svg) left no-repeat;
-}
-
-.footer-menu ul {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-
-}
-
-.footer-menu p {
-    color: #080809;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26.145px; 
-}
-
-.footer-menu {
-    display: flex;
-    gap: 80px;
-
-}
-
-.footer-menu a {
-    color: #5E6282;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22.41px;
 }
 
 .social-icons {

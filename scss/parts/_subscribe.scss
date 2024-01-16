@@ -1,0 +1,67 @@
+$borderColor: rgba(28,28,28,0);
+$borderRadius: 10px;
+$gradient: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+$mainFont: 'Montserrat', sans-serif;
+$btnFont: 'Noto Sans', sans-serif;
+$actionColor: #FFF;
+
+
+.subscribe {
+    padding-top: 79px;
+    text-align: center;
+    width: 1170px;
+    height: 407px;
+    border-radius: 129px 20px 20px 20px;
+    background: #E6E6FA;
+
+    h3 {
+        margin: 0 auto;
+        max-width: 859px;
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+
+    input {
+        padding-left: 66px;
+        color: #39425D;
+        font-family: $mainFont;
+        font-size: 14px;
+        background: $actionColor;
+        width: 421px;
+        height: 65px;
+        border-radius: $borderRadius;
+        border-color: $borderColor;
+    }
+
+    i {
+        margin-left: 31px;
+        width: 21px;
+        height: 18px;
+    }
+
+    form {
+        width: 650px;
+        border-radius: $borderRadius;
+        margin: 74px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+    
+    }
+
+    button {
+        color: $actionColor;
+        font-family: $btnFont;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        width: 180px;
+        height: 68px;
+        border-radius: $borderRadius;
+        border-color: $borderColor;
+        background: $gradient;
+        transition: background-color 1s linear;
+    }
+}

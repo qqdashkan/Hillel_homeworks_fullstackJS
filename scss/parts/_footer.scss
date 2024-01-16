@@ -1,0 +1,24 @@
+.footer-menu {
+    display: flex;
+    gap: 80px;
+
+    a {
+        color: #5E6282;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22.41px;
+    }
+
+    p {
+        color: #080809;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26.145px; 
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+}
