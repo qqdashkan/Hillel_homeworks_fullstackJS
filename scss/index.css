@@ -1,0 +1,109 @@
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  width: 900px;
+  height: 900px;
+  margin: 0 auto;
+  border: 4px solid #000;
+}
+
+.left-12345678 {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  text-align: center;
+}
+.left-12345678 span {
+  width: 50px;
+  height: 100px;
+}
+
+.right-12345678 {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  text-align: center;
+}
+.right-12345678 span {
+  width: 50px;
+  height: 100px;
+}
+
+main {
+  width: 800px;
+  height: 800px;
+}
+main .abcdefgh-top {
+  height: 55px;
+  display: flex;
+  border: 0px;
+  text-align: center;
+  font-size: 40px;
+}
+main div {
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
+main span {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+main .row-1 {
+  border-top: 3px solid #000;
+}
+main .row-8 {
+  border-bottom: 3px solid #000;
+}
+main .row-1,
+main .row-3,
+main .row-5,
+main .row-7 {
+  display: inline-flex;
+  background: #000;
+  margin-top: -5px;
+  padding: 0;
+}
+main .row-1 span:nth-child(2n),
+main .row-3 span:nth-child(2n),
+main .row-5 span:nth-child(2n),
+main .row-7 span:nth-child(2n) {
+  background: #fff;
+}
+main .row-2,
+main .row-4,
+main .row-6,
+main .row-8 {
+  display: inline-flex;
+  margin-top: -5px;
+  background: #fff;
+  padding: 0;
+}
+main .row-2 span:nth-child(2n),
+main .row-4 span:nth-child(2n),
+main .row-6 span:nth-child(2n),
+main .row-8 span:nth-child(2n) {
+  background: #000;
+}
+main .abcdefgh-bottom {
+  height: 55px;
+  display: flex;
+  border: 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
