@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 50px auto;
+    font-size: 20px;
+    align-items: center;
+    gap: 40px;
+
+    p {
+        color: #0B132A;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #4F5665;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    a {
+        color: #0B132A;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.red_btn {
+    a {
+        padding: 13px 45px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        width: 150px;
+        height: 45px;
+        color: #F53855;
+        font-size: 16px;
+        border-radius: 50px;
+        border: 1px solid #F53855;
+        background-color: rgba(28,28,28,0);
+        box-shadow: 0 5px 0 #F53855;
+        transition: 1s;
+    }
+
+    a:hover {
+        color: #FFF;
+        background: #FD7C6E;
+        
+    }
+}
+
+.icon {
+    display: flex;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 35px;
+    height: 36px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #F53838;
+    background: url(icons/main-logo.svg) no-repeat;
+}
+
+.icon-Vector {
+    background-position: 0 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}

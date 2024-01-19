@@ -1,0 +1,25 @@
+$colorBtn: #F53855;
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+                    0 0 20px  #fff,
+                    0 0 30px  #fff,
+                    0 0 40px  $colorBtn,
+                    0 0 70px  $colorBtn,
+                    0 0 80px  $colorBtn,
+                    0 0 100px $colorBtn,
+                    0 0 150px $colorBtn;
+    }
+    
+    to {
+        text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px $colorBtn,
+                    0 0 35px $colorBtn,
+                    0 0 40px $colorBtn,
+                    0 0 50px $colorBtn,
+                    0 0 75px $colorBtn;
+    }
+}

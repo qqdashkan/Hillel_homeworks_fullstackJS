@@ -1,0 +1,119 @@
+footer {
+    z-index: -1;
+    position: relative;
+    bottom: 120px;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background: #F5F5F5;
+}
+
+.footer {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 1090px;
+    margin: 0 auto;
+    color: #0B132A;
+    font-size: 20px;
+
+    article {
+        width: 340px;
+        margin: 20px 0;
+        color: #4F5665;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    nav {
+        display: inline-flex;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
+
+
+.social {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 5px;
+
+    p {
+        margin: 50px 0 0 -150px;
+        font-family: 'Rubik', sans-serif;
+        color: #AFB5C0;
+        text-align: start;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+
+.icon-Facebook {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #FFF;
+    color: #FFF;
+    background: url(../icons/Facebook-icon.svg) no-repeat;
+    margin-right: 10px;
+}
+
+.icon-Instagram {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    stroke-width: 0;
+    stroke: currentColor;
+    background: url(../icons/instagram-icon.svg) no-repeat;
+}
+
+.icon-Twitter {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #FFF;
+    background: url(../icons/Twitter.svg) no-repeat;
+}
+
+.navigation {
+    display: flex;
+    gap: 50px;
+    width: 1090px;
+    margin: 0 150px 0 200px;
+
+    a {
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    p {
+        color: #0B132A;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    ul {
+        display: flex;
+        width: 140px;
+        flex-direction: column;
+        float: left;
+        gap: 10px;
+        margin: 0 auto;
+        color: #4F5665;
+        list-style-type: none;
+    }
+}

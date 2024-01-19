@@ -1,0 +1,20 @@
+$color: #4F5665;
+
+.map {
+    margin: 0 auto;
+    max-width: 1190px;
+    text-align: center;
+
+    h2 {
+        margin: 0 auto;
+    }
+
+    article {
+        max-width: 555px;
+        margin: 20px auto;
+        font-size: 16px;
+        color: $color;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}

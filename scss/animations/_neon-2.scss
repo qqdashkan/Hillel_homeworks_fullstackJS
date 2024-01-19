@@ -1,0 +1,18 @@
+@keyframes neon-2 {
+    from {
+        box-shadow: 0 0 5px #fff,
+                    0 0 10px  #F53855,
+                    0 0 40px  #F53855,
+                    0 0 80px  #F53855,
+                    0 0 100px #F53855,
+                    0 0 150px #F53855;
+    }
+    to {
+        box-shadow: 0 0 5px #fff,
+                    0 0 10px #F53855,
+                    0 0 20px #F53855,
+                    0 0 40px #F53855,
+                    0 0 50px #F53855,
+                    0 0 75px #F53855;
+    }
+}
