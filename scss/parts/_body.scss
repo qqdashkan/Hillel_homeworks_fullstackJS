@@ -1,0 +1,37 @@
+body {
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #181E4B;
+    font-family: 'Volkhov', serif;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 89px;
+    letter-spacing: -3.36px;
+}
+
+h2 {
+    color: #14183E;
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #5E6282;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.decore {
+    background: url(assets/Decore.png);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}

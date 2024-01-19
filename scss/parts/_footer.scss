@@ -1,0 +1,98 @@
+.footer-menu {
+    display: flex;
+    gap: 80px;
+
+    a {
+        color: #5E6282;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22.41px;
+    }
+
+    p {
+        color: #080809;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26.145px; 
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+}
+
+.hero-footer {
+    width: 1060px;
+    margin: 166px auto;
+    display: flex;
+    gap: 83px;
+}
+
+
+.logotype p {
+    max-width: 207px;
+    color: #5E6282;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.185px;
+}
+
+
+.icon-Jadoo {
+    width: 152px;
+    height: 66px;
+    margin-bottom: 19px;
+    background: url(icons/Jadoo..svg) left no-repeat;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background:#FFF;
+        filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
+    }
+}
+
+.discover p {
+    color: #5E6282;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.9px; 
+    letter-spacing: 0.1px;
+}
+
+.google-apple {
+    display: flex;
+    gap: 7px;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 107px;
+        height: 35px;
+        border-radius: 17.5px;
+        background: #080809;
+    }
+}
+
+.rights {
+    margin: 86px auto 79px;
+    text-align: center;
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.43px;
+}
