@@ -63,5 +63,31 @@ $actionColor: #FFF;
         border-color: $borderColor;
         background: $gradient;
         transition: background-color 1s linear;
+
+        &:hover {
+            cursor: pointer;
+            animation: subscribe 1s ease;
+            background: #D53E07;
+        }
     }
+}
+
+.hero-subscribe {
+    width: 1440px;
+    margin: 150px 135px 0 135px;
+}
+
+.dec-plane {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 50px;
+    right: 250px;
+}
+
+.dec-subscribe {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    left: 100px;
 }

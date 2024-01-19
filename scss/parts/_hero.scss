@@ -1,0 +1,151 @@
+.wrapper {
+    width: 1160px;
+    margin: 50px auto;
+    display: inline-flex;
+    justify-content: center;
+}
+
+ul a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    max-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #212832;
+
+}
+
+li a { 
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    color: #212832;
+    font-size: 17px;
+    border-color: rgba(28,28,28,0); 
+}
+
+.icon-Logo {
+    background: url(../icons/Logo.svg) no-repeat;
+    margin-left: 220px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 700px;
+    width: 1180px;
+    height: 765px;
+    margin: 100px 110px 100px 150px;
+    background: url(../assets/Traveller\ 1.png) right no-repeat;
+    margin-bottom: -700px;
+
+    object {
+        z-index: -1;
+        position: relative;
+        bottom: 200px;
+        left: 250px;
+    }
+
+    h1 {
+        max-width: 545px;
+        animation: roll-in 2s ease;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #DF6951;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 25px;
+        animation: roll-in 2s ease;
+    }
+
+    h3 {
+        max-width: 477px;
+        margin-top: 30px;
+        animation: roll-in 2s ease;
+    }
+
+    button {
+        font-family: 'Noto Sans', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        width: 170px;
+        height: 60px;
+        border-radius: 10px;
+        background: #F1A501;
+        box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+        border-color: rgba(28,28,28,0);
+        margin-top: 34px;
+        transition: background-color 1s linear;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #D53E07;
+        }
+    }
+    
+    
+}
+
+.planes {
+
+    object {
+
+        &:nth-child(1) {
+            z-index: 2;
+            position: absolute;
+            left: 550px;
+            bottom: 600px;
+            margin: 0 auto;
+            width: 137.294px;
+            height: 95.232px;
+            background: url(../assets/plane.svg) center no-repeat;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            z-index: 1;
+            left: 1050px;
+            bottom: 500px;
+            margin: 0 auto;
+            width: 137.294px;
+            height: 95.232px;
+            background: url(../assets/plane.svg) center no-repeat;
+        }
+    }
+}
+
+.play-demo {
+    color: #686D77;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: baseline;
+    gap: 21px;
+
+    button {
+        margin-left: 54px;
+        border-radius: 50%;
+        color: #fff;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        background: #DF6951;
+        border-color: rgba(28,28,28,0);
+        box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+        animation: pulsing 2s infinite;
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: baseline;
+}

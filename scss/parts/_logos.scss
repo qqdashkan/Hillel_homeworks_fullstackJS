@@ -1,0 +1,39 @@
+.hero-logos {
+    width: 1073px;
+    margin: 184px 181px 0 180px;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+
+    div {
+        &:nth-child(1) {
+            filter:grayscale(1)
+        }
+
+        &:nth-child(3) {
+            padding: 0 40px 10px 40px;
+            display: inline-flex;
+            align-items: center;
+            height: 86px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+        }
+
+        &:nth-child(2) {
+            filter:grayscale(1)
+        }
+
+        &:nth-child(4) {
+            filter:grayscale(1)
+        }
+
+        &:nth-child(5) {
+            filter:grayscale(1)
+        }
+    }
+}
