@@ -1,0 +1,58 @@
+.hero {
+    display: flex;
+    width: 1140px;
+    margin: 120px auto;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.illustration {
+    background: url("../assets/Illustration\ 1.svg");
+    width: 611px;
+}
+
+.title {
+    display: flex;
+    max-width: 555px;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        color: #0B132A;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #4F5665;
+    }
+
+    button {
+        margin: 30px 0;
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        background: #F53838;
+        border-color: rgba(28,28,28,0);
+        color: #FFF;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        filter: opacity(50%);
+    }
+
+    button:hover {
+        animation: neon-2 1s ease-out infinite alternate;
+        cursor: pointer;
+        filter: opacity(100%);
+    }
+}
+
+
+
+

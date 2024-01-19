@@ -1,0 +1,83 @@
+$cursor: pointer;
+$position: relative;
+$bounce: bounce 1.5s ease infinite;
+
+.points svg {
+    margin: 155px auto 0;
+    display: block;
+    width: 1060px;
+    height: 550px;
+    background: url(../icons/map.svg);
+}
+
+/* europe */
+.points object:nth-child(2) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 420px;
+    left: 130px;
+}
+
+/* usa */
+.points object:nth-child(3) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 400px;
+    right: 250px;
+}
+
+/* australia */
+.points object:nth-child(4) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 170px;
+    left: 380px;
+}
+
+/* south america */
+.points object:nth-child(5) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 200px;
+    right: 220px;
+}
+
+/* africa */
+.points object:nth-child(6) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 300px;
+    right: 10px;
+}
+
+/* asia */
+.points object:nth-child(7) {
+    cursor: $cursor;
+    position: $position;
+    bottom: 450px;
+    left: 250px;
+}
+
+.points object:nth-child(2):hover {
+    animation: $bounce;
+}
+
+.points object:nth-child(3):hover {
+    animation: $bounce;
+}
+
+.points object:nth-child(4):hover {
+    animation: $bounce;
+}
+
+.points object:nth-child(5):hover {
+    animation: $bounce;
+}
+
+.points object:nth-child(6):hover {
+    animation: $bounce;
+}
+
+.points object:nth-child(7):hover {
+    animation: $bounce;
+}

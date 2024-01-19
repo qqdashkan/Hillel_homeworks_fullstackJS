@@ -1,0 +1,35 @@
+body {
+    width: 1440px;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+}
+
+h1 {
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    transition: all 0.5s;
+
+    &:hover {
+        cursor: pointer;
+        color: #FFF;
+        animation: neon 1.5s ease-in-out infinite alternate;
+    }
+}
+
+
+h2 {
+    max-width: 400px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+h3 {
+    color: #0B132A;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
