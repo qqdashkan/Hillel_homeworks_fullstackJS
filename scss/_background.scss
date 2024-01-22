@@ -1,0 +1,42 @@
+.background {
+
+    .background-filter {
+        width: 1920px;
+	    height: 3900px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background: linear-gradient(330deg, rgba(11, 29, 38, 0.00) 31.06%, #0B1D26 108.93%);
+    }
+    
+
+    span:nth-child(2) {
+        display: block;
+        width: 1920px;
+        height: 1513px;
+        background: url(../img/HG.png) no-repeat;
+    }
+
+    span:nth-child(3) {
+        display: block;
+        width: 1920px;
+        height: 1422px;
+        position: relative;
+        bottom: 665px;
+        background: url(../img/MG.png) no-repeat;
+    }
+
+    span:nth-child(4) {
+        display: block;
+        width: 1920px;
+        height: 926px;
+        position: relative;
+        bottom: 1800px;
+        background: url(../img/VG.png) no-repeat;
+    }
+
+
+}
