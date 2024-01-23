@@ -27,6 +27,7 @@
         }
 
         span:nth-child(3) {
+            font-family: 'Open Sans', sans-serif;
             display: inline-flex;
             justify-content: start;
             align-items: center;
@@ -40,10 +41,11 @@
         gap: 24px;
 
         span:nth-child(1) {
+            font-family: 'Open Sans', sans-serif;
             display: inline-block;
             padding-top: 65px;
-            width: 90px;
-            height: 30px;
+            width: 100%;
+            height: 35px;
             transform: rotate(90deg);
         }
 
@@ -63,6 +65,7 @@
     }
 
     .pagination {
+        font-family: 'Open Sans', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: end;

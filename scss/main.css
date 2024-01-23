@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   width: 1920px;
   font-family: "Open Sans", sans-serif;
@@ -7,36 +61,31 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
-
-main {
+body main {
   position: absolute;
   top: 0;
   margin-top: 300px;
 }
-
-h1 {
+body h1 {
   font-family: "Lora", serif;
   font-size: 88px;
   font-weight: 600;
   line-height: 100px;
   text-transform: capitalize;
 }
-
-h2 {
+body h2 {
   font-family: "Lora", serif;
   font-size: 64px;
   font-weight: 600;
 }
-
-h3 {
+body h3 {
   font-family: "Lora", serif;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.32px;
   text-transform: capitalize;
 }
-
-h4 {
+body h4 {
   font-family: "Open Sans", sans-serif;
   color: #FBD784;
   font-size: 18px;
@@ -44,14 +93,12 @@ h4 {
   letter-spacing: 6px;
   text-transform: uppercase;
 }
-
-h5 {
+body h5 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
-
-.background .background-filter {
+body .background .background-filter {
   width: 1920px;
   height: 3900px;
   position: absolute;
@@ -62,13 +109,13 @@ h5 {
   opacity: 1;
   background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
 }
-.background span:nth-child(2) {
+body .background span:nth-child(2) {
   display: block;
   width: 1920px;
   height: 1513px;
   background: url(../img/HG.png) no-repeat;
 }
-.background span:nth-child(3) {
+body .background span:nth-child(3) {
   display: block;
   width: 1920px;
   height: 1422px;
@@ -76,7 +123,7 @@ h5 {
   bottom: 665px;
   background: url(../img/MG.png) no-repeat;
 }
-.background span:nth-child(4) {
+body .background span:nth-child(4) {
   display: block;
   width: 1920px;
   height: 926px;
@@ -91,6 +138,9 @@ header {
 }
 
 .wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,6 +197,7 @@ header {
   height: 1px;
 }
 .hero_wrapper .hero-content span:nth-child(3) {
+  font-family: "Open Sans", sans-serif;
   display: inline-flex;
   justify-content: start;
   align-items: center;
@@ -158,10 +209,11 @@ header {
   gap: 24px;
 }
 .hero_wrapper .social span:nth-child(1) {
+  font-family: "Open Sans", sans-serif;
   display: inline-block;
   padding-top: 65px;
-  width: 90px;
-  height: 30px;
+  width: 100%;
+  height: 35px;
   transform: rotate(90deg);
 }
 .hero_wrapper .social span:nth-child(2) {
@@ -177,6 +229,7 @@ header {
   background: url(../icons/twitter.svg) no-repeat;
 }
 .hero_wrapper .pagination {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -212,13 +265,13 @@ header {
 }
 
 .content-1 {
-  padding-left: 150px;
+  padding-left: 110px;
   width: 1462px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px auto;
-  gap: 115px;
+  gap: 130px;
 }
 
 .info-1 {
@@ -235,6 +288,9 @@ header {
 }
 .info-1 h5 {
   width: 632px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
 }
 .info-1 h4 {
   width: 100%;
@@ -272,7 +328,7 @@ header {
 .wrapper-2 .number-2 {
   font-family: "Montserrat", sans-serif;
   position: relative;
-  left: 680px;
+  left: 650px;
   top: 275px;
   color: #FFF;
   font-size: 240px;
@@ -303,6 +359,9 @@ header {
 }
 .info-2 h5 {
   width: 645px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
 }
 .info-2 h4 {
   width: 100%;
@@ -369,6 +428,9 @@ header {
 }
 .info-3 h5 {
   width: 635px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
 }
 .info-3 h4 {
   width: 100%;
@@ -397,9 +459,13 @@ header {
 }
 
 .foo-wrapper {
-  padding-top: 200px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 800px;
   padding-bottom: 120px;
-  width: 1460px;
+  width: 1465px;
   margin: 0 auto;
   display: flex;
   gap: 212px;

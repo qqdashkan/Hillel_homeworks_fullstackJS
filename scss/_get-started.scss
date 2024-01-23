@@ -19,13 +19,13 @@
 }
 
 .content-1 {
-    padding-left: 150px;
+    padding-left: 110px;
     width: 1462px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px auto;
-    gap: 115px;
+    gap: 130px;
 }
 
 .info-1 {
@@ -43,6 +43,9 @@
 
     h5 {
         width: 632px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
     }
 
     h4 {
