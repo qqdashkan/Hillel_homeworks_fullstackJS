@@ -39,6 +39,8 @@ section {
         margin: 0 auto;
     
         figure {
+            display: flex;
+            align-items: center;
             width: 140px;
             height: 50px;
             margin: 100px auto;
@@ -49,7 +51,8 @@ section {
             }
 
             p {
-                line-height: 26px;
+                width: 50px;
+                line-height: 16px;
             } 
         }
     }
