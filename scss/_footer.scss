@@ -6,7 +6,7 @@ footer {
     margin-top: 100px;
 
    .foo-wrapper {
-        width: 1120px;
+        width: 90vw;
         margin: 0 auto;
         text-align: start;
    }
@@ -15,9 +15,11 @@ footer {
 @media screen and (max-width: 1025px) {
 
     footer {
+        width: 100vw;
+
         .foo-wrapper {
             padding: 0 50px;
-            width: 85vw;
+            width: 80vw;
             margin: 0 auto;
         }
     }
