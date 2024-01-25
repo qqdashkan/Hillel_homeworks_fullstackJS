@@ -234,6 +234,7 @@ section .hero-wrapper .icons figure p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 90vw;
   }
   section .hero-wrapper {
     background: #34547A;
@@ -285,7 +286,7 @@ section .hero-wrapper .icons figure p {
   }
   section .about-wrapper {
     margin: 0 auto;
-    width: 90vw;
+    width: 80vw;
   }
   section .about-wrapper p {
     width: 80vw;

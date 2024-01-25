@@ -75,6 +75,7 @@ section {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 90vw;
         }
         
         .hero-wrapper {
@@ -137,7 +138,7 @@ section {
 
         .about-wrapper {
             margin: 0 auto;
-            width: 90vw;
+            width: 80vw;
 
             p {
                 width: 80vw;  
