@@ -1,0 +1,113 @@
+header {
+    padding-top: 50px;
+    width: 1920px;
+    background: #EEEFF1;
+
+    .head-wrapper {
+        width: 90vw;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 1120px;
+        margin-left: 10%;
+
+        menu {
+            display: flex;
+            gap: 20px;
+            max-width: 100%;
+
+            a {
+                text-decoration: none; 
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    span {
+        font-size: 16px;
+        max-width: 540px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    button {
+        background-color: #34547A;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        width: 225px;
+        height: 65px;
+        margin-top: 60px;
+        margin-bottom: 140px;
+        border: 1px solid rgb(225, 225, 225, 0);
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    header {
+        width: 100vw;
+
+        .head-wrapper {
+            width: 80vw;
+            text-align: center;
+            
+            menu {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                word-spacing: 0;
+                padding: 15px 0;
+
+                p {
+                    font-size: 26px;
+                }
+            }
+
+            h1 {
+                margin: 25px auto;
+                width: 400px;
+                font-size: 36px;
+            }
+    
+            span {
+                margin: 25px auto;
+                width: 400px;
+                font-size: 20px;
+            }
+
+            button {
+                margin: 25px auto;
+                background: #34547A;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                width: 200px;
+                height: 55px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 431px) {
+
+header {
+    
+    .head-wrapper {
+        width: 90vw;
+        padding: 25px;
+
+        menu {
+        
+            span {
+                max-width: 90vw;
+                font-size: 20px;
+            }
+        }
+    }
+}
+}

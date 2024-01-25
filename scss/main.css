@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 1920px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+body h1 {
+  font-size: 48px;
+  margin-top: 60px;
+  line-height: 78px;
+}
+body h2 {
+  font-size: 32px;
+  margin: 100px auto 50px auto;
+  line-height: 32px;
+  text-align: center;
+}
+body h3 {
+  position: relative;
+  font-size: 21px;
+  margin: 10px auto;
+  top: 50px;
+}
+
+header {
+  padding-top: 50px;
+  width: 1920px;
+  background: #EEEFF1;
+}
+header .head-wrapper {
+  width: 90vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 1120px;
+  margin-left: 10%;
+}
+header .head-wrapper menu {
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+}
+header .head-wrapper menu a {
+  text-decoration: none;
+}
+header .head-wrapper menu p {
+  font-size: 16px;
+}
+header span {
+  font-size: 16px;
+  max-width: 540px;
+  line-height: 26px;
+  font-weight: 400;
+}
+header button {
+  background-color: #34547A;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 225px;
+  height: 65px;
+  margin-top: 60px;
+  margin-bottom: 140px;
+  border: 1px solid rgba(225, 225, 225, 0);
+}
+
+@media screen and (max-width: 1025px) {
+  header {
+    width: 100vw;
+  }
+  header .head-wrapper {
+    width: 80vw;
+    text-align: center;
+  }
+  header .head-wrapper menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    word-spacing: 0;
+    padding: 15px 0;
+  }
+  header .head-wrapper menu p {
+    font-size: 26px;
+  }
+  header .head-wrapper h1 {
+    margin: 25px auto;
+    width: 400px;
+    font-size: 36px;
+  }
+  header .head-wrapper span {
+    margin: 25px auto;
+    width: 400px;
+    font-size: 20px;
+  }
+  header .head-wrapper button {
+    margin: 25px auto;
+    background: #34547A;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 55px;
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 431px) {
+  header .head-wrapper {
+    width: 90vw;
+    padding: 25px;
+  }
+  header .head-wrapper menu span {
+    max-width: 90vw;
+    font-size: 20px;
+  }
+}
+section {
+  width: 1920px;
+  height: 250px;
+  color: #fff;
+}
+section .about-wrapper {
+  width: 100vw;
+  color: #000;
+  display: block;
+  padding-bottom: 50px;
+  text-align: center;
+}
+section .about-wrapper p {
+  margin: 0 auto;
+  width: 500px;
+}
+section .hero-wrapper {
+  background: #34547A;
+  width: 100vw;
+  display: flex;
+  gap: 25px;
+  padding: 100px 50px;
+}
+section .hero-wrapper .icons {
+  width: 90vw;
+  display: flex;
+  gap: 25px;
+  margin: 0 auto;
+}
+section .hero-wrapper .icons figure {
+  display: flex;
+  gap: 10px;
+  width: 150px;
+  height: 50px;
+}
+section .hero-wrapper .icons figure p {
+  width: 50px;
+  line-height: 25px;
+}
+
+.video-wrapper {
+  padding-top: 100px;
+  display: block;
+  width: 100vw;
+  text-align: center;
+}
+.video-wrapper h2 {
+  padding-top: 50px;
+}
+.video-wrapper p {
+  margin: 0 auto;
+  width: 500px;
+  padding-bottom: 50px;
+}
+.video-wrapper iframe {
+  width: 70vw;
+  height: 40vw;
+}
+
+@media screen and (max-width: 1025px) {
+  section {
+    width: 100vw;
+  }
+  section .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+  }
+  section .hero-wrapper {
+    background: #34547A;
+    width: 100vw;
+    padding: 25px;
+  }
+  section .hero-wrapper .icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section .hero-wrapper .icons figure {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    margin: 15px auto;
+  }
+  section .hero-wrapper .icons figure img {
+    float: left;
+    margin-right: 10px;
+  }
+  section .hero-wrapper .icons figure p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .video-wrapper {
+    margin-top: 500px;
+    text-align: center;
+    width: 100vw;
+    font-size: 36px;
+  }
+  .video-wrapper p {
+    text-align: center;
+    max-width: 90vw;
+    font-size: 20px;
+    margin: 15px auto;
+  }
+  .video-wrapper iframe {
+    max-width: 85vw;
+    max-height: 50vw;
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 431px) {
+  section {
+    width: 100vw;
+  }
+  section .about-wrapper {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  section .about-wrapper p {
+    width: 80vw;
+  }
+  section .hero-wrapper {
+    width: 90vw;
+  }
+  section .hero-wrapper .icons {
+    padding: 25px;
+  }
+  .video-wrapper iframe {
+    width: 90vw;
+    margin: 15px auto;
+  }
+}
+footer {
+  width: 100vw;
+  background: #34547A;
+  height: 150px;
+  color: #fff;
+  margin-top: 100px;
+}
+footer .foo-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: start;
+}
+
+@media screen and (max-width: 1025px) {
+  footer {
+    width: 100vw;
+  }
+  footer .foo-wrapper {
+    padding: 0 50px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+footer {
+    width: 100vw;
+    background: #34547A;
+    height: 150px;
+    color: #fff;
+    margin-top: 100px;
+
+   .foo-wrapper {
+        width: 90vw;
+        margin: 0 auto;
+        text-align: start;
+   }
+}
+
+@media screen and (max-width: 1025px) {
+
+    footer {
+        width: 100vw;
+
+        .foo-wrapper {
+            padding: 0 50px;
+            width: 80vw;
+            margin: 0 auto;
+        }
+    }
+}
