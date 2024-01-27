@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body header {
+  width: 100vw;
+  padding-top: 36px;
+  color: #252B42;
+}
+body header .menuList {
+  display: none;
+  background: #fff;
+  justify-content: center;
+  color: #737373;
+  text-align: center;
+  min-width: 100vw;
+  height: 90vw;
+  margin-top: 50px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.2px;
+}
+body header .menuList ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body header .menu nav {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 105px;
+}
+body header .menu nav p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+body header .menu nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 24px;
+}
+body header .menu nav ul li:nth-child(1) {
+  width: 24px;
+  height: 24px;
+  background: url(../icons/search.svg) no-repeat;
+}
+body header .menu nav ul li:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  background: url(../icons/shopping-cart.svg) no-repeat;
+}
+body header .menu nav ul li:last-child {
+  width: 24px;
+  height: 24px;
+  transform: scaleX(-1) scale(1.2);
+}
+body section {
+  width: 100vw;
+  color: #252B42;
+}
+body section .hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  margin: 50px 13px;
+  padding: 80px 50px;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+}
+body section .hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+}
+body section .hero-content h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+body section .hero-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+body section .hero-content button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  min-width: 141px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  text-align: center;
+  color: #fff;
+  background: #23A6F0;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0);
+}/*# sourceMappingURL=main.css.map */
