@@ -619,7 +619,7 @@ body .hero-content button {
     align-items: start;
     max-width: 558px;
     height: 575px;
-    background: url(/icons/unsplash_large.jpg) center no-repeat;
+    background: url(../icons/unsplash_large.jpg) center no-repeat;
   }
   .cards figure:nth-child(1) figcaption {
     align-items: start;
@@ -635,7 +635,7 @@ body .hero-content button {
     max-height: 289px;
     align-items: start;
     font-weight: 400;
-    background: url(/icons/unsplash_medium-1.jpg) center no-repeat;
+    background: url(../icons/unsplash_medium-1.jpg) center no-repeat;
   }
   .cards figure:nth-child(2) figcaption {
     align-items: start;
@@ -651,7 +651,7 @@ body .hero-content button {
     max-height: 261px;
     align-items: start;
     font-weight: 400;
-    background: url(/icons/unsplash_medium-2.jpg) center no-repeat;
+    background: url(../icons/unsplash_medium-2.jpg) center no-repeat;
   }
   .cards figure:nth-child(3) figcaption {
     align-items: start;
