@@ -451,7 +451,7 @@ body .hero-content button {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background: url(/icons/unsplash_1.jpg) center no-repeat;
+  background: url(../icons/unsplash_1.jpg) center no-repeat;
 }
 .cards figure:nth-child(1) figcaption {
   display: flex;
@@ -471,7 +471,7 @@ body .hero-content button {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background: url(/icons/unsplash_2.jpg) center no-repeat;
+  background: url(../icons/unsplash_2.jpg) center no-repeat;
 }
 .cards figure:nth-child(2) figcaption {
   display: flex;
@@ -491,7 +491,7 @@ body .hero-content button {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background: url(/icons/unsplash_3.jpg) center no-repeat;
+  background: url(../icons/unsplash_3.jpg) center no-repeat;
 }
 .cards figure:nth-child(3) figcaption {
   display: flex;
@@ -865,7 +865,7 @@ body .hero-content button {
   display: block;
   width: 72px;
   height: 72px;
-  background: url(/icons/book-reader.svg) no-repeat;
+  background: url(../icons/book-reader.svg) no-repeat;
 }
 .services .icon-2 {
   display: flex;
@@ -878,7 +878,7 @@ body .hero-content button {
   display: block;
   width: 72px;
   height: 72px;
-  background: url(/icons/carbon_book.svg) no-repeat;
+  background: url(../icons/carbon_book.svg) no-repeat;
 }
 .services .icon-3 {
   display: flex;
@@ -891,7 +891,7 @@ body .hero-content button {
   display: block;
   width: 72px;
   height: 72px;
-  background: url(/icons/arrow-growth.svg) no-repeat;
+  background: url(../icons/arrow-growth.svg) no-repeat;
 }
 
 .posts {
@@ -1291,17 +1291,17 @@ footer .social-icons ul {
 footer .social-icons ul li:nth-child(1) {
   width: 24px;
   height: 24px;
-  background: url(/icons/facebook-filled.svg) no-repeat;
+  background: url(../icons/facebook-filled.svg) no-repeat;
 }
 footer .social-icons ul li:nth-child(2) {
   width: 24px;
   height: 24px;
-  background: url(/icons/instagram-outlined.svg) no-repeat;
+  background: url(../icons/instagram-outlined.svg) no-repeat;
 }
 footer .social-icons ul li:nth-child(3) {
   width: 24px;
   height: 20px;
-  background: url(/icons/twitter-outlined.svg) no-repeat;
+  background: url(../icons/twitter-outlined.svg) no-repeat;
 }
 footer .navigation {
   padding: 70px 0 70px 46px;
