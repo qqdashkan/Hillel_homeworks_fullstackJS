@@ -129,63 +129,62 @@
         </div>
         <div class="offcanvas-body p-md-0">
           <div class="cover"></div>
-          <div class="offcontent align-items-center">
-            <div class="d-md-flex justify-content-center text-white my-md-5 py-md-5">
-              <i class="bi bi-arrow-left-square-fill"></i>
-              <p class="mx-md-5 px-md-5">USD</p>
-              <img src="items/circles.svg" alt="circles">
-              <i class="bi bi-arrow-right-square-fill"></i>
-            </div>
-            <ul class="rounded-5 my-md-4 px-md-5">
-              <li class="list-group-item d-md-flex align-content-center justify-content-center text-white bg-info bg-gradient bg-opacity-25  py-md-3">Total earned<p class="mb-0 ms-md-5">10000</p></li>
-              <li class="list-group-item d-md-flex align-content-center justify-content-center text-white bg-info bg-gradient bg-opacity-25  py-md-3">Deposited<p class="mb-0 ms-md-5">17.000</p></li>
-            </ul>
-          <p class="card-text"><small class="text-white mx-md-5">Velit officia consequat duis enim velit mollit.</small></p>
+            <div class="offcontent align-items-center">
+              <div class="d-md-flex justify-content-center text-white my-md-5 py-md-5">
+                <i class="bi bi-arrow-left-square-fill"></i>
+                <p class="mx-md-5 px-md-5">USD</p>
+                <img src="items/circles.svg" alt="circles">
+                <i class="bi bi-arrow-right-square-fill"></i>
+              </div>
+              <ul class="rounded-5 my-md-4 px-md-5">
+                <li class="list-group-item d-md-flex align-content-center justify-content-center text-white bg-info bg-gradient bg-opacity-25  py-md-3">Total earned<p class="mb-0 ms-md-5">10000</p></li>
+                <li class="list-group-item d-md-flex align-content-center justify-content-center text-white bg-info bg-gradient bg-opacity-25  py-md-3">Deposited<p class="mb-0 ms-md-5">17.000</p></li>
+              </ul>
+            <p class="card-text"><small class="text-white mx-md-5">Velit officia consequat duis enim velit mollit.</small></p>
+          </div>
         </div>
-        </div>
       </div>
       </div>
-      </div>
+    </div>
   </div>
-    </li>
-    <li class="nav-item">
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  </li>
+  <li class="nav-item">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button class="btn btn-light me-md-2 text-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">New deposits</button>
-        <div class="modal fade border-gradient" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content  bg-dark border-primary">
-              <div class="modal-header">
-                <h5 class="modal-title text-white" id="exampleModalLabel">Message</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                
-              </div>
-              <div class="modal-body text-white">
+      <div class="modal fade border-gradient" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content  bg-dark border-primary">
+            <div class="modal-header">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body text-white">
                 Log in to your account or register.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div>
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Registration</button>
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 мин назад</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <div>
-                  <button type="button" class="btn btn-primary" id="liveToastBtn">Registration</button>
-                  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                      <div class="toast-header">
-                        <img src="..." class="rounded me-2" alt="...">
-                        <strong class="me-auto">Bootstrap</strong>
-                        <small>11 мин назад</small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
-                      </div>
-                      <div class="toast-body">
-                        Привет, мир! Это тост-сообщение.
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              </div>
+            <div class="toast-body">
+              Привет, мир! Это тост-сообщение.
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-    </li>
+    </div>
+  </li>
   </ul>
 </header>
 <main>
@@ -458,9 +457,9 @@
       </div>
     </footer>
 </main>
-<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
