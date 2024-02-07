@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #1D1E22;
+}
+body .collapse {
+  color: #fff;
+}
+body .nav-item-twitter,
+body .list-group-item-twitter {
+  background: url(../items/twitter.svg) center no-repeat;
+}
+body .nav-item-facebook,
+body .list-item-facebook {
+  background: url(../items/FB.svg) center no-repeat;
+}
+body .nav-item-youtube,
+body .list-item-youtube {
+  background: url(../items/YouTube.svg) center no-repeat;
+}
+body .nav-item-telegram,
+body .list-item-telegram {
+  background: url(../items/TG.svg) center no-repeat;
+}
+body .cover {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #535FE6;
+  opacity: 0.2;
+}
+body .transparent-pagination {
+  color: #5E647A;
+  background: transparent !important;
+}
+body .location {
+  font-size: 14px;
+}
+body .location button {
+  font-size: 12px;
+}
+body .offcanvas-body {
+  background: url(../items/back-photo.png) no-repeat;
+}
+body .offcanvas-body .cover {
+  width: 100%;
+  height: 100%;
+  background: #535FE6;
+  opacity: 0.8;
+}
+body .offcanvas-body .offcontent {
+  position: relative;
+  z-index: 1;
+}
+body .offcanvas-body img {
+  position: absolute;
+  bottom: 190px;
+}
+body .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+body .rigts {
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

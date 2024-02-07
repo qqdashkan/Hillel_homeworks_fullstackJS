@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1D1E22;
+
+    .collapse {
+        color: #fff;
+    }
+
+    .nav-item-twitter,
+    .list-group-item-twitter {
+        background: url(../items/twitter.svg) center no-repeat;
+    }
+
+    .nav-item-facebook,
+    .list-item-facebook {
+        background: url(../items/FB.svg) center no-repeat;
+    }
+
+    .nav-item-youtube,
+    .list-item-youtube {
+        background: url(../items/YouTube.svg) center no-repeat;
+    }
+
+    .nav-item-telegram,
+    .list-item-telegram {
+        background: url(../items/TG.svg) center no-repeat;
+    }
+
+    .cover {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #535FE6;
+        opacity: 0.2;
+    }
+
+    .transparent-pagination {
+        color: #5E647A;
+        background: transparent !important;
+      }
+
+      .location {
+        font-size: 14px;
+
+        button {
+            font-size: 12px;
+        }
+      }
+
+      .offcanvas-body {
+        background: url(../items/back-photo.png) no-repeat;
+
+        .cover {
+            width: 100%;
+            height: 100%;
+            background: #535FE6;
+            ;
+            opacity: 0.8;
+        }
+
+        .offcontent {
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            bottom: 190px;
+        }
+      }
+
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 200,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+
+      .rigts {
+        font-size: 12px;
+      }
+}
