@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                'main': ['Montserrat'],
+                },
+                colors: {
+                'white-clr': '#fff',
+                'text-clr': '#252B42',
+                'header-color' : '#23856D',
+                'second-text-clr': '#737373',
+                'color-primary': '#23A6F0',
+                'filter': '#212121',
+                },
+            }
+        }
+    </script>
+</head>
+<body>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 200,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+    <header class="bg-header-color font-main">
+        <nav class="mx-auto md:flex lg:flex max-w-7xl items-center justify-between p-6 lg:px-8 text-white-clr" aria-label="Global">
+          <div class="md:flex md:gap-x-3 lg:flex lg:flex-1 lg:gap-x-10">
+            <span class="md:flex md:gap-x-1 lg:flex lg:gap-x-2"><span class="material-symbols-outlined">
+                call
+                </span><p class="font-main">(225) 555-0118</p></span>
+            <span class="md:flex md:gap-x-1 lg:flex lg:gap-x-2"><span class="material-symbols-outlined">
+                mail
+            </span><p>(225) 555-0118</p></span>
+          </div>
+          <div class="lg:flex font-semibold md:hidden">
+            <p>Follow Us  and get a chance to win 80% off</p>
+          </div>
+          <div class="md:flex md:gap-x-1 lg:flex lg:flex-1 items-center justify-between lg:gap-x-2 lg:justify-end">
+            <p class="font-medium">Follow Us  :</p>
+            <a href=""><img src="items/inst.png"/></a>
+            <a href=""><img src="items/youtube.png"/></a>
+            <a href=""><img src="items/facebook.png"/></a>
+            <a href=""><img src="items/twitter.png"/></a>
+          </div>
+        </nav>
+        <section class="bg-white-clr">
+            <nav class="mx-auto text-text-clr flex-1 max-w-7xl p-6 lg:px-8" aria-label="Global">
+                <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold">Bandage</span>
+                <a href="" class="lg:hidden md:flex items-center text-text-clr font-medium">Menu<span class="material-symbols-outlined">
+                    stat_minus_1
+                    </span></a>
+                <div class="md:hidden lg:flex lg:gap-x-3 text-second-text-clr font-semibold">
+                    <a href="">Home</a>
+                    <a href="" class="lg:flex items-center text-text-clr font-medium">Shop<span class="material-symbols-outlined">
+                        stat_minus_1
+                        </span></a>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Contacts</a>
+                    <a href="">Pages</a>
+                </div>
+                <div class="flex md:gap-x-3 items-center lg:gap-x-5 font-semibold text-color-primary">
+                    <a href="" class="md:flex lg:flex gap-x-1"><span class="material-symbols-outlined">
+                        person
+                        </span><span>Login</span>/<span>Register</span></a>
+                    <a href="" class="flex"><span class="material-symbols-outlined">
+                        search
+                        </span></a>
+                    <a href="" class="flex gap-x-1 items-center font-light"><span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>1</a>
+                    <a href="" class="flex gap-x-1 items-center font-light"><span class="material-symbols-outlined">
+                        favorite
+                        </span>1</a>
+                </div>
+            </div>
+          </nav>
+        </section>
+      </header>
+      <section>
+        <div class="mx-auto flex md:w-full lg:max-w-7xl justify-between items-center p-6 lg:px-8">
+            <span class="text-2xl text-text-clr font-bold">Shop</span>
+            <a href="" class="text-text-clr font-bold text-lg lg:mr-20">Home</a>
+        </div>
+        <section class="bg-[#FAFAFA] font-main">
+            <div class="mx-auto flex md:flex-col lg:flex-row lg:justify-between md:items-center md:gap-y-5 lg:max-w-7xl p-6 lg:px-8">
+                <div class="relative">
+                    <img src="items/card-cover-1.jpg" alt="">
+                    <div class="absolute inset-0 bg-filter opacity-25 z-10"></div>
+                        <span class="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
+                        <p class="text-white-clr text-base font-bold">CLOTHS</p>
+                        <p class="text-white-clr text-sm font-light">5 items</p>
+                    </span>
+                </div>
+                <div class="relative">
+                    <img src="items/card-cover-2.jpg" alt="">
+                    <div class="absolute inset-0 bg-filter opacity-25 z-10"></div>
+                    <span class="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
+                        <p class="text-white-clr text-base font-bold">CLOTHS</p>
+                        <p class="text-white-clr text-sm font-light">5 items</p>
+                    </span>
+                </div>
+                <div class="relative">
+                    <img src="items/card-cover-3.jpg" alt="">
+                    <div class="absolute inset-0 bg-filter opacity-25 z-10"></div>
+                    <span class="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
+                        <p class="text-white-clr text-base font-bold">CLOTHS</p>
+                        <p class="text-white-clr text-sm font-light">5 items</p>
+                    </span>
+                </div>
+                <div class="relative">
+                    <img src="items/card-cover-4.jpg" alt="">
+                    <div class="absolute inset-0 bg-filter opacity-25 z-10"></div>
+                    <span class="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
+                        <p class="text-white-clr text-base font-bold">CLOTHS</p>
+                        <p class="text-white-clr text-sm font-light">5 items</p>
+                    </span>
+                    </div>
+                <div class="relative">
+                    <img src="items/card-cover-5.jpg" alt="">
+                    <div class="absolute inset-0 bg-filter opacity-25 z-10"></div>
+                    <span class="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
+                        <p class="text-white-clr text-base font-bold">CLOTHS</p>
+                        <p class="text-white-clr text-sm font-light">5 items</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+      </section>
+      <div class="mx-auto flex justify-between items-center p-6 lg:max-w-7xl lg:px-8 font-main">
+        <span class="font-bold text-second-text-clr">Showing all 12 results</span>
+        <span class="flex lg:gap-x-5 md:gap-x-4 items-center font-bold text-text-second-text-clr">Views:
+            <span class="material-symbols-outlined border border-[#ECECEC] p-2.5 rounded">
+                view_comfy_alt
+                </span>
+            <span class="material-symbols-outlined border border-[#ECECEC] p-2.5 rounded">
+                checklist
+                </span>
+        </span>
+        <div class="flex gap-x-5 md:gap-x-3 items-center">
+            <button class="flex items-center border border-[#ECECEC] p-2.5 rounded bg-[#F9F9F9]">Popularity<span class="material-symbols-outlined">
+                stat_minus_1
+                </span></button>
+            <button class="lg:flex items-center px-4 py-2.5 rounded bg-color-primary text-white-clr font-medium">Filter</button>
+        </div>
+      </div>
+      <!-- row-1-shop -->
+      <section class="mx-auto flex md:flex-col lg:flex-row md:items-center justify-between font-main lg:max-w-7xl lg:p-6 md:p-8 lg:px-8 lg:pt-12">
+        <div>
+            <img src="items/shop-1-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-2-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-3-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-4-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+      </section>
+      <!-- row-2-shop -->
+      <section class="mx-auto flex md:flex-col lg:flex-row md:items-center justify-between font-main lg:max-w-7xl lg:p-6 md:p-8 lg:px-8 lg:pt-12">
+        <div>
+            <img src="items/shop-5-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-6-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-7-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-8-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+      </section>
+      <!-- shop-3-row -->
+      <section class="mx-auto flex md:flex-col lg:flex-row md:items-center justify-between font-main lg:max-w-7xl lg:p-6 md:p-8 lg:px-8 lg:pt-12">
+        <div>
+            <img src="items/shop-9-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-10-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-11-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img src="items/shop-12-row.png" alt="card">
+            <span>
+                <ul class="flex flex-col lg:gap-3 md:gap-y-1 items-center py-10">
+                    <li class="text-text-clr font-bold">Graphic Design</li>
+                    <li class="text-second-text-clr font-medium">English Department</li>
+                    <li><span class="font-bold mr-3 text-[#BDBDBD]">$16.48</span><span class="font-bold text-[#23856D]">$6.48</span></li>
+                    <li class="flex gap-2"><span class="block bg-color-primary w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span><span  class="block bg-[#E77C40] w-4 h-4 rounded-full"></span><span  class="block bg-[#23856D] w-4 h-4 rounded-full"></span></li>
+                </ul>
+            </span>
+        </div>
+    </section>
+      <nav class="mx-auto flex items-center justify-center px-8 font-main font-bold pb-12" aria-label="Pagination">
+        <a href="#" class="py-6 px-4 border-2 border-[#BDBDBD] rounded-l-lg bg-[#F9F9F9]">
+          <p class="font-main font-medium text-[#BDBDBD]">First</p>
+        </a>
+        <a href="#" class="py-6 px-4 border-y-2 border-[#BDBDBD] text-color-primary">1</a>
+        <a href="#" aria-current="page" class="py-6 px-4 border-2 border-[#BDBDBD] bg-color-primary text-white-clr">2</a>
+        <a href="#" class="py-6 px-4 border-y-2 border-[#BDBDBD] text-color-primary">3</a>
+        <a href="#" class="py-6 px-4 border-2 border-[#BDBDBD] rounded-r-lg text-color-primary">
+            <p class="font-main font-medium">Next</p>
+        </a>
+      </nav>
+      <section class="bg-[#FAFAFA]">
+        <div class="bg-[#FAFAFA] mx-auto flex md:flex-col lg:flex-row md:gap-7 items-center justify-between p-12 max-w-7xl">
+            <img src="items/col-md-1.png" alt="brand">
+            <img src="items/col-md-2.png" alt="brand">
+            <img src="items/col-md-3.png" alt="brand">
+            <img src="items/col-md-4.png" alt="brand">
+            <img src="items/col-md-5.png" alt="brand">
+            <img src="items/col-md-6.png" alt="brand">
+        </div>
+    </section>
+    <footer>
+        <span class="mx-auto flex items-center justify-between md:p-8 lg:p-16 md:w-full lg:max-w-7xl font-main">
+            <p class="text-2xl font-bold text-text-clr">Bandage</p>
+            <div class="flex items-center justify-between gap-x-5 justify-end">
+                <a href=""><img src="items/facebook-blue.png"/></a>
+                <a href=""><img src="items/instagram-blue.png"/></a>
+                <a href=""><img src="items/twitter-blue.png"/></a>
+            </div>
+        </span>
+        <div class="mx-auto font-main flex gap-x-14 lg:max-w-6xl md:w-full md:p-8 lg:py-12 md:font-normal font-semibold text-second-text-clr border-t">
+            <ul class="flex flex-col gap-y-3">
+                <li class="text-text-clr"><b>Company Info</b></li>
+                <li>About Us</li>
+                <li>Carrier</li>
+                <li>We are hiring</li>
+                <li>Blog</li>
+            </ul>
+            <ul class="flex flex-col gap-y-3">
+                <li class="text-text-clr"><b>Legal</b></li>
+                <li>About Us</li>
+                <li>Carrier</li>
+                <li>We are hiring</li>
+                <li>Blog</li>
+            </ul>
+            <ul class="flex flex-col gap-y-3">
+                <li class="text-text-clr"><b>Features</b></li>
+                <li>Business Marketing</li>
+                <li>User Analytic</li>
+                <li>Live Chat</li>
+                <li>Unlimited Support</li>
+            </ul>
+            <ul class="flex flex-col gap-y-3">
+                <li class="text-text-clr"><b>Resources</b></li>
+                <li>IOS & Android</li>
+                <li>Watch a Demo</li>
+                <li>Customers</li>
+                <li>API</li>
+            </ul>
+            <ul class="lg:flex lg:flex-col lg:gap-3 md:hidden">
+                <li class="text-text-clr"><b>Get In Touch</b></li>
+                <li class="lg:flex"><input type="email" value="Your Email" class="lg:flex py-4 px-6 border border-[#BDBDBD] rounded-l-lg bg-[#F9F9F9]"><button class="py-4 px-6 border border-[#BDBDBD] rounded-r-lg bg-color-primary text-white-clr font-normal">Subscribe</button></li>
+                <li class="font-light">Lore imp sum dolor Amit</li>
+            </ul>
+        </div>
+        <div class="lg:hidden md:flex md:flex-col md:gap-3 md:p-6 md:items-center">
+            <p class="text-text-clr"><b>Get In Touch</b></p>
+            <span class="lg:flex"><input type="email" value="Your Email" class="lg:flex py-4 px-6 border border-[#BDBDBD] rounded-l-lg bg-[#F9F9F9]"><button class="py-4 px-6 border border-[#BDBDBD] rounded-r-lg bg-color-primary text-white-clr font-normal">Subscribe</button></span>
+            <p class="font-light">Lore imp sum dolor Amit</p>
+        </div>
+        <div class="bg-[#FAFAFA]">
+            <span class="mx-auto flex items-center md:justify-center justify-between lg:p-12 md:p-6 md:w-full lg:max-w-7xl font-main">
+                <p class="text-sm font-bold text-second-text-clr">Made With Love By Finland All Right Reserved </p>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
