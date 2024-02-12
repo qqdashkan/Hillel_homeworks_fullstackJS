@@ -8,7 +8,8 @@ let myObject = {
     phoneNumber: '0673299116',
     email: 'qqdashkan@icloud.com',
     gender: 'female',
-    hobby: 'boxing'
+    hobby: 'boxing',
+    haveDrivingeLicense: false
 };
 
 let myObject1 = {
@@ -17,7 +18,8 @@ let myObject1 = {
     phoneNumber: '0671164004',
     email: 'inna@icloud.com',
     gender: 'female',
-    hobby: 'travel'
+    hobby: 'travel',
+    haveDrivingeLicense: false
 };
 
 let myObject2 = {
@@ -26,7 +28,8 @@ let myObject2 = {
     phoneNumber: '+57864235991',
     email: 'pablo@icloud.com',
     gender: 'male',
-    hobby: 'coke'
+    hobby: 'coke',
+    haveDrivingeLicense: true
 };
 
 const myArray = [myObject, myObject1, myObject2];
