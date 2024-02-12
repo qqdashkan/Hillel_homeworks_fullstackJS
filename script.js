@@ -8,7 +8,7 @@ let myObject = {
     phoneNumber: '0673299116',
     email: 'qqdashkan@icloud.com',
     gender: 'female',
-    hobby: 'box'
+    hobby: 'boxing'
 };
 
 let myObject1 = {
