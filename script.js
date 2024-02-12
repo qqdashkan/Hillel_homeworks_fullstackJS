@@ -9,7 +9,7 @@ let myObject = {
     email: 'qqdashkan@icloud.com',
     gender: 'female',
     hobby: 'boxing',
-    haveDrivingeLicense: false
+    hasDrivingeLicense: false
 };
 
 let myObject1 = {
@@ -19,7 +19,7 @@ let myObject1 = {
     email: 'inna@icloud.com',
     gender: 'female',
     hobby: 'travel',
-    haveDrivingeLicense: false
+    hasDrivingeLicense: false
 };
 
 let myObject2 = {
@@ -29,7 +29,7 @@ let myObject2 = {
     email: 'pablo@icloud.com',
     gender: 'male',
     hobby: 'coke',
-    haveDrivingeLicense: true
+    hasDrivingeLicense: true
 };
 
 const myArray = [myObject, myObject1, myObject2];
