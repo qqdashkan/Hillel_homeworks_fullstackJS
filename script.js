@@ -69,7 +69,6 @@ function Game2() {
                 alert('Люк oбирає чесний шлях, відмовляючись від легкого успіху.');
                 Tournament();
             }
-            return;
         }
 
         else if (step1 === '2') {
@@ -82,7 +81,6 @@ function Game2() {
                 alert('Люк вирішує конфлікти миром, заробляючи повагу як лідера.');
                 Tournament();
             }
-            return;
         }
 
         else {
@@ -95,8 +93,8 @@ function Game2() {
                 alert('Люк дізнається, що дракон не хоче воювати, і вони досягають миру.');
                 LastTask();
             }
-            return;
         }
+        return;
     };
 
     function Tournament() {
@@ -107,20 +105,18 @@ function Game2() {
         if (step2 === '1') {
             alert('Люк демонструє свої навички, здобуваючи повагу.');
             LastTask();
-            return;
         } 
 
         else if (step2 === '2') {
             alert('Люк допомагає пораненому рицарю, показуючи своє серце.');
             Final2();
-            return;
         } 
 
         else {
             alert('Люк відмовляється боротися, стверджуючи, що справжній рицар знає, коли не варто воювати.');
             Final1();
-            return;
         } 
+        return;
     }
 
     function LastTask() {
@@ -131,14 +127,13 @@ function Game2() {
         if (step3 === '1') {
             alert('Люк веде війська проти ворога, демонструючи свою відвагу.');
             Final1();
-            return;
         } 
 
         else {
             alert('Люк вирушає за древньою реліквією, що може врятувати королівство.');
             Final3();
-            return;
         } 
+        return;
     }
 
     function Final1() {
