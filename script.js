@@ -106,7 +106,7 @@ function Game2() {
 
         if (step2 === '1') {
             alert('Люк демонструє свої навички, здобуваючи повагу.');
-            Final1();
+            LastTask();
             return;
         } 
 
