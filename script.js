@@ -12,15 +12,17 @@ first.addEventListener('click', () => {
         Poland: 699,
         Grecce: 1099,
         Moldova: 299
-        }   
+    }   
     
-    let country = prompt('Введіть бажану країну для подорожі:');
+    let country = prompt('Введіть бажану країну для подорожі - Ukraine, Italia, Tailand, Poland, Grecce or Moldova:');
     let money = prompt('Введіть наявну суму подорожі:');
-    function getArrayOfCountries(country, money) {
+
+    function getResult(country, money) {
 
         if (Number(money) >= objectOfCountries[country]) {
             alert(`Рівень бюджету достатній для подорожі в ${country}`);
-        } else {
+
+        } else if (Number(money) < objectOfCountries[country] && Number(money) > 298) {
             let newArr = [];
             for (key in objectOfCountries) {
                 if (objectOfCountries[key] <= money) {
@@ -28,39 +30,13 @@ first.addEventListener('click', () => {
                 }
             }
             alert(`Рівень бюджету не достатній для подорожі в ${country}, але ми підібрали для вас кращі варіанти на ваш бюджет: ${newArr}`);
-        }
+
+        } else alert(`Ви бідний! Приходьте через рік.`);
         return;
     }
-    
-    switch (country) {
-        case ('Ukraine'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        case ('Italia'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        case ('Tailand'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        case ('Poland'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        case ('Grecce'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        case ('Moldova'):
-            getArrayOfCountries(country, money);
-            break;
-    
-        default: alert(`Ви бідний! Приходьте через рік.`);
-            break;
-    };
-})
+    getResult(country, money);
+});
+
 
 /* розрахунок знижки */
 
