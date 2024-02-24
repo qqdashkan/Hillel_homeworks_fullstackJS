@@ -17,6 +17,7 @@ function Casino() {
     let colorOfPlayer = getColorOfPlayer();
     let randomColor = getPlay(bet, colorOfPlayer);
     compareColors(colorOfPlayer, randomColor, money, bet);
+    return;
 }
 
 function getMoney() {
@@ -90,7 +91,7 @@ function nextSpin(money) {
     if (money > 0) {
         let newSpin = confirm(`Граємо далі чи забрати виграш?`);
 
-        if (newSpin && money > 0) {
+        if (newSpin) {
             let bet = getBet(money);
             let newColor = getColorOfPlayer();
             let randomColor = getPlay(bet, newColor);
