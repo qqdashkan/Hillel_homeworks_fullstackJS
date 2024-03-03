@@ -70,14 +70,14 @@ function createInvestmentAccount(initialAmount, annualInterestRate) {
     }
 }
 
-const myAccount = createInvestmentAccount(2250, 12);
+const myAccount = createInvestmentAccount(15000, 9);
 
 console.log(new Intl.NumberFormat("en-GB", { 
     style: "currency", 
     currency: "GBP" })
     .format(myAccount.deposit(850)));
 
-console.log(new Intl.NumberFormat("en-US", { 
+console.log(new Intl.NumberFormat("en-GB", { 
     style: "currency", 
     currency: "GBP" })
     .format(myAccount.withdraw(225)));
