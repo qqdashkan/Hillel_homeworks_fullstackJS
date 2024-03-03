@@ -1,3 +1,4 @@
+//Task 1
 function createCurrencyConverter(rate) {
     function toLocalCurrency(currency) {
         return parseInt(currency) * rate;
@@ -23,3 +24,67 @@ console.log(new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" 
     converter.toForeignCurrency("89 EUR"),
   ),
 );
+
+//Task 2
+
+let balance = 0;
+let projection = 0;
+
+function createInvestmentAccount(initialAmount, annualInterestRate) {
+
+    function deposit(amount) {
+        return balance = initialAmount + amount;
+    }
+
+    function withdraw(amount)  {
+        return balance -= amount;
+    }
+
+    function calculateProfit(years) {
+        return projection = (balance * (annualInterestRate / 100)) * years;
+    }
+
+    function getAccountInfo() {
+        return {
+            'Поточний баланс': new Intl.NumberFormat("en-GB", { 
+                style: "currency", 
+                currency: "GBP" })
+                .format(balance),
+                
+            'Відсоток річних': new Intl.NumberFormat("en-GB", {
+                 style: "percent" })
+                .format(annualInterestRate/100),
+
+            'Загальний дохід в кінці': new Intl.NumberFormat("en-GB", { 
+                style: "currency", 
+                currency: "GBP" })
+                .format((balance + projection).toFixed(2))
+        }
+        
+    }
+    return {
+        deposit,
+        withdraw,
+        calculateProfit,
+        getAccountInfo
+    }
+}
+
+const myAccount = createInvestmentAccount(2250, 12);
+
+console.log(new Intl.NumberFormat("en-GB", { 
+    style: "currency", 
+    currency: "GBP" })
+    .format(myAccount.deposit(850)));
+
+console.log(new Intl.NumberFormat("en-US", { 
+    style: "currency", 
+    currency: "GBP" })
+    .format(myAccount.withdraw(225)));
+
+console.log(new Intl.NumberFormat("en-GB", { 
+    style: "currency", 
+    currency: "GBP" })
+    .format(myAccount.calculateProfit(5).toFixed(2)));
+
+console.log(myAccount.getAccountInfo());
