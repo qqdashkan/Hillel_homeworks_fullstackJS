@@ -1,5 +1,5 @@
 //Task 1
-function createCurrencyConverter(rate) {
+/* function createCurrencyConverter(rate) {
     function toLocalCurrency(currency) {
         return parseInt(currency) * rate;
     }
@@ -23,7 +23,7 @@ console.log(new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" 
 console.log(new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
     converter.toForeignCurrency("89 EUR"),
   ),
-);
+); */
 
 //Task 2
 
@@ -41,7 +41,15 @@ function createInvestmentAccount(initialAmount, annualInterestRate) {
     }
 
     function calculateProfit(years) {
-        return projection = (balance * (annualInterestRate / 100)) * years;
+        let arr = [];
+        for (let i = 0; i <= years - 1; i++) {
+            arr[i] = balance;
+        }
+        projection = arr.reduce(function(sum, current) {
+            return sum + current * ((annualInterestRate / 100) * years);
+        });
+        //return projection = (balance * (annualInterestRate / 100)) * years;
+        return projection;
     }
 
     function getAccountInfo() {
@@ -70,7 +78,7 @@ function createInvestmentAccount(initialAmount, annualInterestRate) {
     }
 }
 
-const myAccount = createInvestmentAccount(15000, 9);
+const myAccount = createInvestmentAccount(550, 5);
 
 console.log(new Intl.NumberFormat("en-GB", { 
     style: "currency", 
@@ -87,4 +95,6 @@ console.log(new Intl.NumberFormat("en-GB", {
     currency: "GBP" })
     .format(myAccount.calculateProfit(5).toFixed(2)));
 
-console.log(myAccount.getAccountInfo());
+    //console.log(myAccount.calculateProfit(5));
+
+//console.log(myAccount.getAccountInfo());
