@@ -38,18 +38,30 @@ console.log(moveOver([1,2,3,4], 'start'));
 //task 3
 
 function findLongestWord(expresion) {
-    let arrOfWords = expresion.split(" ");
-    let longestWord = 0;
+    let arrOfWords = expresion.split(' ');
+    let smallestWord = 0;
+    let longestWord = '';
 
+    //вариант 1
     let arr = arrOfWords.map(word => word.length);
-    let maximum = Math.max(...arr);
+    let minimum = Math.min(...arr);
 
     arrOfWords.forEach(word => {
-        if (word.length == maximum) {
-            longestWord = word;
+        if (word.length === minimum) {
+            smallestWord = word;
         }
     });
-    return longestWord;
+
+    //вариант 2
+    for (let word of arrOfWords) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+    return {
+        smallestWord,
+        longestWord,
+    }
 }
 
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
