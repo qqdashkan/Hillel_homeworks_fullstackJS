@@ -1,6 +1,6 @@
 //task 1
 
-let vowels = [ 'a', 'o', 'u', 'i', 'e' , 'y']
+/* let vowels = [ 'a', 'o', 'u', 'i', 'e' , 'y']
 let count = 0;
 
 function letCountVowels(args) {
@@ -17,12 +17,12 @@ function letCountVowels(args) {
     return count;
 }
 
-console.log(letCountVowels("My dear WATSON!"));
+console.log(letCountVowels("My dear WATSON!")); */
 
 
 //task 2
 
-function moveOver(arr, position) {
+/* function moveOver(arr, position) {
     if (position === 'end') {
         let elem = arr.shift();
         arr.push(elem);
@@ -33,4 +33,23 @@ function moveOver(arr, position) {
     return arr;
 }
 
-console.log(moveOver([1,2,3,4], 'start'));
+console.log(moveOver([1,2,3,4], 'start')); */
+
+//task 3
+
+function findLongestWord(expresion) {
+    let arrOfWords = expresion.split(" ");
+    let longestWord = 0;
+
+    let arr = arrOfWords.map(word => word.length);
+    let maximum = Math.max(...arr);
+
+    arrOfWords.forEach(word => {
+        if (word.length == maximum) {
+            longestWord = word;
+        }
+    });
+    return longestWord;
+}
+
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
