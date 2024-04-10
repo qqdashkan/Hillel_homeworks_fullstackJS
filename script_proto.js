@@ -1,6 +1,6 @@
 //task 
 
-/* const vehicle = {
+const vehicle = {
     start() {
         console.log("drives")
     },
@@ -88,11 +88,11 @@ Object.setPrototypeOf(truck, car);
 Object.setPrototypeOf(sedan, car);
 
 Object.setPrototypeOf(sportBike, bike);
-Object.setPrototypeOf(scooter, bike); */
+Object.setPrototypeOf(scooter, bike);
 
 //task 3
 
-/* function Vehicle(type, wheels, weight) {
+function Vehicle(type, wheels, weight) {
     this.type = type;
     this.wheels = wheels;
     this.weight = weight;
@@ -165,7 +165,7 @@ Car.prototype.stop = function() {
 };
 
 bmw.start();
-bmw.stop(); */
+bmw.stop();
 
 // task 4
 
