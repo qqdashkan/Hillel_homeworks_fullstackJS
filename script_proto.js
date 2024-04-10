@@ -77,11 +77,11 @@ const scooter = {
 };
 
 sportBike.__proto__ = bike;
-scooter.__proto__ = bike; */
+scooter.__proto__ = bike;
 
 //task 2
 
-/* Object.setPrototypeOf(car, vehicle);
+Object.setPrototypeOf(car, vehicle);
 Object.setPrototypeOf(bike, vehicle);
 
 Object.setPrototypeOf(truck, car);
