@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -10,4 +14,45 @@
 h1 {
     display: flex;
     justify-content: center;
+}
+
+.modal-window {
+    z-index: 1;
+    top: 1%;
+    right: 25%;
+    left: 25%;
+    max-width: 1024px;
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 15px 55px 15px;
+
+}
+
+.cover {
+    top: 0;
+    z-index: 0;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+.close-item {
+    width: 105%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 22px;
 }
