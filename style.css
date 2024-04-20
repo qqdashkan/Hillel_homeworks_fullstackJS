@@ -1,0 +1,30 @@
+.palette {
+    max-width: 1024px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.colors {
+    display: flex;
+}
+
+.availableColor {
+    display: block;
+    width: 75px;
+    height: 75px;
+}
+
+.space {
+    display: block;
+    width: 95%;
+    height: 50vw;
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
