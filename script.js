@@ -10,7 +10,7 @@ canvas.addEventListener('dblclick', function () {
     const green = Math.random() * 257;
     const blue = Math.random() * 257;
 
-    newAvailableColor.style = `background-color: rgb(${red}, ${green}, ${blue});`
+    newAvailableColor.style = `background-color: rgb(${red}, ${green}, ${blue});`;
 });
 
 colors.addEventListener('contextmenu', function (event) {
@@ -20,7 +20,23 @@ colors.addEventListener('contextmenu', function (event) {
     }
 });
 
+colors.addEventListener('click', function (event) {
+        
+        const modal = document.querySelector('.modal');
+        
+        /* const rgb = event.target.style.backgroundColor;
+        const opacity = rgb.slice(0, rgb.length - 1)  + ', 0.5)';
+        event.target.style.backgroundColor = opacity; */
+        event.target.style.opacity = '0.5';
+        //openedModalWindow.style.opacity = "none";
+});
+
 function openModalWindow(event) {
+    const openedModalWindow = document.querySelector('.modal');
+    if(colors.closest(openedModalWindow)) {
+        return;
+    }
+
     const chosenColor = event.target;
     chosenColor.setAttribute('status', 'current');
     const x = event.clientX;
@@ -91,8 +107,19 @@ function openModalWindow(event) {
     });
 
     deleteElement.addEventListener('click', () => {
-        const modalWindow = document.querySelector('.modal');
-        const currentCircle = modalWindow.parentElement;
-        currentCircle.removeChild(modalWindow);
+        closeModalWindow();
+    });
+
+    document.addEventListener( "keydown", (event) => {
+        const keyName = event.key;
+            if (keyName === "Escape") {
+                closeModalWindow();
+            }
     });
 };
+
+function closeModalWindow() {
+    const modalWindow = document.querySelector('.modal');
+    const currentCircle = modalWindow.parentElement;
+    currentCircle.removeChild(modalWindow);
+}
