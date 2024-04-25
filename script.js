@@ -2,15 +2,18 @@ const canvas = document.querySelector('.space');
 const colors = document.querySelector('.colors');
 
 canvas.addEventListener('dblclick', function () {
-    const newAvailableColor = document.createElement('div');
-    colors.appendChild(newAvailableColor);
-    newAvailableColor.classList.add('availableColor');
+    const newAvailableColorWrapper = document.createElement('div');
+    const colorCircle = document.createElement('div');
+    colors.appendChild(newAvailableColorWrapper);
+    newAvailableColorWrapper.appendChild(colorCircle);
+    colorCircle.classList.add('availableColor');
+    newAvailableColorWrapper.style.borderRadius = '50%';
 
     const red = Math.random() * 257;
     const green = Math.random() * 257;
     const blue = Math.random() * 257;
 
-    newAvailableColor.style = `background-color: rgb(${red}, ${green}, ${blue});`;
+    colorCircle.style = `background-color: rgb(${red}, ${green}, ${blue});`;
 });
 
 colors.addEventListener('contextmenu', function (event) {
@@ -21,15 +24,30 @@ colors.addEventListener('contextmenu', function (event) {
 });
 
 colors.addEventListener('click', function (event) {
-        
-        const modal = document.querySelector('.modal');
-        
-        /* const rgb = event.target.style.backgroundColor;
-        const opacity = rgb.slice(0, rgb.length - 1)  + ', 0.5)';
-        event.target.style.backgroundColor = opacity; */
-        event.target.style.opacity = '0.5';
-        //openedModalWindow.style.opacity = "none";
+    const availableColorElement = setOpacity(event);
+
+        document.body.addEventListener('mousemove', moveAt);
+
+        document.body.addEventListener('keydown', (event) => {
+            const keyName = event.key;
+            if (keyName === "Escape") {
+                document.body.removeEventListener('mousemove', moveAt);
+            }
+        });
+
+        function moveAt(event) {
+            availableColorElement.style.position = 'absolute';
+            availableColorElement.style.top = event.y + 'px';
+            availableColorElement.style.left = event.x + 'px';
+        };
 });
+
+function setOpacity(event) {
+    if(event.target.className === 'availableColor') {
+        event.target.style.opacity = '0.5';
+        return event.target.parentElement;
+    }
+}
 
 function openModalWindow(event) {
     const openedModalWindow = document.querySelector('.modal');
@@ -37,16 +55,19 @@ function openModalWindow(event) {
         return;
     }
 
-    const chosenColor = event.target;
+    const chosenColor = event.target.parentElement;
     chosenColor.setAttribute('status', 'current');
     const x = event.clientX;
     const y = event.clientY;
+    console.log(event);
 
     const modalWindow = document.createElement('div');
     modalWindow.classList.add('modal');
     chosenColor.appendChild(modalWindow);
     modalWindow.style.top = y + 'px';
     modalWindow.style.left = x + 'px';
+    modalWindow.style.zIndex = '9999';
+    modalWindow.style.position = 'absolute';
 
     const form = document.createElement('form');
     form.classList.add('formStyle');
@@ -55,6 +76,7 @@ function openModalWindow(event) {
     const deleteElement = document.createElement('span');
     deleteElement.className = 'delete-item';
     deleteElement.innerHTML = '<i class="fa fa-remove"></i>';
+    deleteElement.style.cursor = 'pointer';
     form.before(deleteElement);
 
     const diameter = document.createElement('label');
@@ -96,9 +118,9 @@ function openModalWindow(event) {
         event.preventDefault();
         const diameterValue = document.querySelector('.diameter-input');
         const colorValue = document.querySelector('.color-input');
-        modalWindow.parentElement.style.backgroundColor = colorValue.value;
-        modalWindow.parentElement.style.width = diameterValue.value + 'px';
-        modalWindow.parentElement.style.height = diameterValue.value + 'px';
+        modalWindow.parentElement.firstChild.style.backgroundColor = colorValue.value;
+        modalWindow.parentElement.firstChild.style.width = diameterValue.value + 'px';
+        modalWindow.parentElement.firstChild.style.height = diameterValue.value + 'px';
     });
 
     resetBtn.addEventListener('click', () => {
@@ -122,4 +144,4 @@ function closeModalWindow() {
     const modalWindow = document.querySelector('.modal');
     const currentCircle = modalWindow.parentElement;
     currentCircle.removeChild(modalWindow);
-}
+};
