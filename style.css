@@ -1,0 +1,47 @@
+.palette {
+    max-width: 1024px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.colors {
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.availableColor {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.space {
+    display: block;
+    width: 95%;
+    height: 70vw;
+}
+
+.modal {
+    padding: 20px 30px 40px 30px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.delete-item {
+    display: flex;
+    justify-content: end;
+}
