@@ -62,10 +62,10 @@ function renderGallery() {
     gallery.appendChild(div);
     div.classList.add('box');
 
-    renderImages(images);
+    renderImages(images, div);
 }
 
-function renderImages(array) {
+function renderImages(array, div) {
     array.forEach(img => {
         const pic = document.createElement('img');
         pic.dataset.date = img.date;
