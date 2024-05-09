@@ -29,7 +29,7 @@ class Library {
         this.#booksList = booksInStock;
     }
 
-    getPrivateField() {
+    getPrivateBooksList() {
         return this.#booksList;
     }
 
@@ -72,15 +72,14 @@ class Book extends Library {
                 this.rate = point;
                 this.#arrOfPoints.push(point);
             return this.rate;
-        } else return "wrong data";
+        } else return "you didn't take this book";
     } ;
   
     getAverageRating() {
         if (this.#arrOfPoints.length > 0) {
           const sum = this.#arrOfPoints.reduce((acc, val) => acc + val, 0);
-          return sum / this.#arrOfPoints.length;
-        }
-      return 0;
+          return this.rate = sum / this.#arrOfPoints.length; 
+        } else return this.rate;
     };
 };
 
@@ -118,32 +117,45 @@ class User extends Library {
     };
 };
 
-const myLibrary = new Library(booksInStock);
-
-const newBook = new Book("Test book", "Test author", 2000);
+const library = new Library(booksInStock);
+const listOfBooks = library.getPrivateBooksList();
 
 const user = new User('Lena');
 user.addNewUser('Lena');
 
-user.borrowBook("Harry Potter", myLibrary);
-user.returnBook("1984", myLibrary);
+user.borrowBook("Harry Potter", listOfBooks);
+user.returnBook("1984", listOfBooks);
 
-console.log(booksInStock);
+const newBook = new Book("Test book", "Test author", 2000);
+library.addBook(newBook);
 
-console.log('-----------------------------');
+user.borrowBook("1984", listOfBooks);
+user.returnBook("Harry Potter", listOfBooks);
 
-user.borrowBook("1984", myLibrary);
-user.returnBook("Harry Potter", myLibrary);
-
-newBook.addRating(user, 5, "1984");
+newBook.addRating(user, 1, "The Lord of the Rings");
 
 const myBook = new Book("Qwerty", "Test author", 1994);
-myLibrary.addBook(myBook)
+library.addBook(myBook);
 
-console.log(user.showBooks());
-
-console.log(user.borrowBook("Qwerty", myLibrary));
-console.log(user.returnBook("Qwerty", myLibrary));
+user.borrowBook("Qwerty", listOfBooks);
+user.returnBook("Qwerty", listOfBooks);
 
 myBook.addRating(user, 5, "Qwerty");
-console.log(booksInStock);
+
+const user1 = new User('Dasha');
+user1.addNewUser('Dasha');
+
+user1.borrowBook("Qwerty", listOfBooks);
+user1.returnBook("Qwerty", listOfBooks);
+
+myBook.addRating(user1, 3, "Qwerty");
+myBook.getAverageRating();
+
+const silmarillion = new Book("The Silmarillion", "J.R.R.Tolkien", 1977);
+library.addBook(silmarillion);
+
+library.findBooksByAuthor("J.R.R.Tolkien");
+library.getListOfAvailableBooks();
+
+library.removeBook("Qwerty");
+console.log(listOfBooks);
