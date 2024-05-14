@@ -19,12 +19,16 @@ const modal = document.querySelector('.modal');
 const removeBtn = document.querySelector('.remove-btn');
 const submitBtn = document.querySelector('.ok');
 
+document.addEventListener('DOMContentLoaded', function () {
+    startBtn.disabled = true;
+    startBtn.classList.remove('on');
+    startBtn.classList.add('off');
+})
+
 startBtn.addEventListener('click', function() {
     editBtn.disabled = true;
-    editBtn.style.backgroundColor = '#474747';
-    editBtn.style.boxShadow = '0px 6px 0px #474747';
-    editBtn.style.color = '#B2BEB5';
-    editBtn.style.border = '1px solid #818589';
+    editBtn.classList.add('off');
+    editBtn.classList.remove('on');
 
     const time = ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + secondsValueInput.value) * 1000;
     barProgress(time);
@@ -38,10 +42,8 @@ startBtn.addEventListener('click', function() {
         pauseBtn.addEventListener('click', function() {
             clearInterval(interval);
             editBtn.disabled = false;
-            editBtn.style.backgroundColor = '#e67e22';
-            editBtn.style.boxShadow = '0px 6px 0px #d35400';
-            editBtn.style.color = '#ecf0f1';
-            editBtn.style.border = '1px solid #f39c12';
+            editBtn.classList.remove('off');
+            editBtn.classList.add('on');
         });
 });
 
@@ -51,6 +53,9 @@ resetBtn.addEventListener('click', setTimer);
 
 function openModalWindow() {
     modal.style.display = "block";
+    startBtn.disabled = false;
+    startBtn.classList.remove('off');
+    startBtn.classList.add('on');
 
     submitBtn.addEventListener('click', setTimer);
 
