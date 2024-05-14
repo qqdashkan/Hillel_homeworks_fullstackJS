@@ -1,4 +1,4 @@
-import { defaultTime as value } from "/constants.js";
+import { defaultTime as value } from "./constants.js";
 
 const startBtn = document.querySelector('.start-btn');
 const resetBtn = document.querySelector('.reset-btn');
