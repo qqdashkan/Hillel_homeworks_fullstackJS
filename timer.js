@@ -30,8 +30,9 @@ startBtn.addEventListener('click', function() {
     editBtn.classList.add('off');
     editBtn.classList.remove('on');
 
-    const time = ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + secondsValueInput.value) * 1000;
-    barProgress(time);
+    const startValue = progressElement.value;
+    const time = ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + (secondsValueInput.value - 1)) * 1000;
+    barProgress(time, startValue);
 
         //clearInterval(interval);
 
@@ -66,7 +67,7 @@ function openModalWindow() {
 
 function setTimer() {
     //clearInterval(interval);
-
+    progressElement.value = 0;
     if (hoursValueInput.value, minutesValueInput.value, secondsValueInput.value) {
         if (+hoursValueInput.value >= 0 && +minutesValueInput.value >= 0 && +secondsValueInput.value >= 0) {
             hours.innerHTML = +hoursValueInput.value < 10 ? '0' + hoursValueInput.value : +hoursValueInput.value;
@@ -86,18 +87,20 @@ function setTimer() {
     };
 };
 
-function barProgress(time) {
-    const progressElement = document.querySelector('.progress-bar');
-    let start = 0;
+function barProgress(time, startValue) {
+    let start = startValue;
     const increment = 100 / (time / 1000);
-    console.log(progressElement.value);
         const bar = setInterval(function() {
             if (start > 100) {
                 clearInterval(bar);
             } 
-            progressElement.value = start;
+            progressElement.value = Math.floor(start);
             start+=increment;
         }, 1000);
+
+        pauseBtn.addEventListener('click', function () {
+            clearInterval(bar);
+        })
 };
 
 function startTimer() {
