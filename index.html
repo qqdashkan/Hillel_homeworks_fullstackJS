@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="constants.js"></script>
+    <script defer type="module" src="timer.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+
+    <div class="timer-wrapper">
+        <div class="timer" id=countdown>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <small>hours</small>
+            </div>
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>minutes</small>
+            </div>
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>seconds</small>
+            </div>
+        </div>
+        <div class="modal">
+            <span class="remove-btn"><i class="fa fa-remove"></i></span>
+            <label for="">H:<input type="number" max="24" min="0" class="hrs"></label>
+            <label for="">M:<input type="number" max="59" min="0" class="mins"></label>
+            <label for="">S:<input type="number" max="59" min="0" class="secs"></label>
+            <button class="ok">OK</button>
+        </div>
+        <div class="btns">
+            <button class="start-btn">Start</button>
+            <button class="reset-btn">Reset</button>
+            <button class="pause-btn">Pause</button>
+            <button class="edit-btn">Edit</button>
+        </div>
+        <progress class="progress-bar" value="0" max="100"></progress>
+</body>
+</html>
