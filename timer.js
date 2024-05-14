@@ -19,6 +19,10 @@ const modal = document.querySelector('.modal');
 const removeBtn = document.querySelector('.remove-btn');
 const submitBtn = document.querySelector('.ok');
 
+function convertMilliseconds() {
+    return ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + (secondsValueInput.value)) * 1000;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     startBtn.disabled = true;
     startBtn.classList.remove('on');
@@ -30,9 +34,9 @@ startBtn.addEventListener('click', function() {
     editBtn.classList.add('off');
     editBtn.classList.remove('on');
 
-    const startValue = progressElement.value;
-    const time = ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + (secondsValueInput.value - 1)) * 1000;
-    barProgress(time, startValue);
+    //const startValue = progressElement.value;
+    const time = convertMilliseconds();
+    barProgress(time);
 
         //clearInterval(interval);
 
@@ -87,8 +91,8 @@ function setTimer() {
     };
 };
 
-function barProgress(time, startValue) {
-    let start = startValue;
+function barProgress(time) {
+    let start = progressElement.value;
     const increment = 100 / (time / 1000);
         const bar = setInterval(function() {
             if (start > 100) {
@@ -100,7 +104,12 @@ function barProgress(time, startValue) {
 
         pauseBtn.addEventListener('click', function () {
             clearInterval(bar);
-        })
+        });
+        resetBtn.addEventListener('click', function () {
+            const time = convertMilliseconds();
+            clearInterval(bar);
+            barProgress(time);
+        });
 };
 
 function startTimer() {
