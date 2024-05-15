@@ -1,4 +1,4 @@
-import { defaultTime as value } from "./constants.js";
+import { defaultTime as defaulValue } from "./constants.js";
 
 const startBtn = document.querySelector('.start-btn');
 const resetBtn = document.querySelector('.reset-btn');
@@ -20,7 +20,7 @@ const removeBtn = document.querySelector('.remove-btn');
 const submitBtn = document.querySelector('.ok');
 
 function convertMilliseconds() {
-    return ((hoursValueInput.value * 60 * 60) + (minutesValueInput.value * 60) + (secondsValueInput.value)) * 1000;
+    return ((Number(hoursValueInput.value) * 60 * 60) + (Number(minutesValueInput.value) * 60) + Number(secondsValueInput.value)) * 1000;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -34,22 +34,19 @@ startBtn.addEventListener('click', function() {
     editBtn.classList.add('off');
     editBtn.classList.remove('on');
 
-    //const startValue = progressElement.value;
     const time = convertMilliseconds();
     barProgress(time);
 
-        //clearInterval(interval);
+    const interval = setInterval(startTimer, 1000);
 
-        const interval = setInterval(startTimer, 1000);
+    resetBtn.addEventListener('click', setTimer);
 
-        resetBtn.addEventListener('click', setTimer);
-
-        pauseBtn.addEventListener('click', function() {
-            clearInterval(interval);
-            editBtn.disabled = false;
-            editBtn.classList.remove('off');
-            editBtn.classList.add('on');
-        });
+    pauseBtn.addEventListener('click', function() {
+        clearInterval(interval);
+        editBtn.disabled = false;
+        editBtn.classList.remove('off');
+        editBtn.classList.add('on');
+    });
 });
 
 editBtn.addEventListener('click', openModalWindow);
@@ -70,45 +67,44 @@ function openModalWindow() {
 };
 
 function setTimer() {
-    //clearInterval(interval);
-    progressElement.value = 0;
     if (hoursValueInput.value, minutesValueInput.value, secondsValueInput.value) {
         if (+hoursValueInput.value >= 0 && +minutesValueInput.value >= 0 && +secondsValueInput.value >= 0) {
             hours.innerHTML = +hoursValueInput.value < 10 ? '0' + hoursValueInput.value : +hoursValueInput.value;
             minutes.innerHTML = +minutesValueInput.value < 10 ? '0' + minutesValueInput.value : +minutesValueInput.value;
             seconds.innerHTML = +secondsValueInput.value < 10 ? '0' + secondsValueInput.value : +secondsValueInput.value;
+            progressElement.value = 0;
         }
         else {
             alert('error');
             hoursValueInput.value = 0;
-            minutesValueInput.value = defaultTime;
+            minutesValueInput.value = defaulValue;
             secondsValueInput.value = 0;
         }
     } else {
         hours.innerHTML = '00';
-        minutes.innerHTML = value;
+        minutes.innerHTML = defaulValue;
         seconds.innerHTML = '00';
+        progressElement.value = 0;
     };
 };
 
 function barProgress(time) {
-    let start = progressElement.value;
-    const increment = 100 / (time / 1000);
+    let start = 0;
+    const increment = 100 / (time / 1500);
         const bar = setInterval(function() {
             if (start > 100) {
                 clearInterval(bar);
             } 
-            progressElement.value = Math.floor(start);
+            progressElement.value = Math.round(start);
             start+=increment;
-        }, 1000);
+        }, 1500);
 
         pauseBtn.addEventListener('click', function () {
             clearInterval(bar);
         });
         resetBtn.addEventListener('click', function () {
-            const time = convertMilliseconds();
+            progressElement.value = 0;
             clearInterval(bar);
-            barProgress(time);
         });
 };
 
