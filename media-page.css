@@ -1,0 +1,34 @@
+.media-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 50px 50px 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+p {
+    text-align: start;
+    max-width: 700px;
+    font-weight: normal;
+}
+
+#back-to-home {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+li {
+    text-align: start;
+    font-weight: bold;
+}
