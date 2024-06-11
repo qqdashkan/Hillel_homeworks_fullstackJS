@@ -1,4 +1,17 @@
-header {
+.app-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+.header-line {
+    padding: 0 50px;
+    height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
