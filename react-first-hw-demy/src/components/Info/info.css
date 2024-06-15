@@ -1,0 +1,14 @@
+.info-block {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+}
+
+.line {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
