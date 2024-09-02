@@ -51,6 +51,10 @@ function handleSearch(previewResponse) {
         if(!value) {
             hidePreview()
         }
+        const check = document.getElementById('movies');
+        if(check.checked) {
+            const collection = createCollectionList(previewResponse.data, createTile);
+        }
 
         hidePreviewAndCreatePosters(previewResponse);
     }
@@ -106,7 +110,6 @@ function previewPosterInfo() {
         }
     }
 }
-
 
 function handleReturnToHome() {
     history.pushState(null, null, `/`);
