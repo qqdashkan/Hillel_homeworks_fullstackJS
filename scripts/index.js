@@ -1,11 +1,11 @@
 import { WEATHER_API_DOMAIN } from './constants.js';
+import { API_KEY } from './constants.js';
 import { UNSPLESH_API_DOMAIN } from './constants.js';
 import { ACCESS_KEY } from './constants.js';
 import { fillDetails } from './showElements.js';
 import { fillBackgroundPhoto } from './showElements.js';
 
-//const cityWeatherUrl = `${WEATHER_API_DOMAIN}&q=${city}`;
-const cityWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=50.27&lon=30.31&appid=d98772e829a58cf89f62b52d79afd286`;
+const cityWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&q=London&units=metric`;
 const cityWallUnspleshUrl = `${UNSPLESH_API_DOMAIN}?query=${city}&client_id=${ACCESS_KEY}&count=1`;
 
 function getWeatherDetails(weatherUrl) {
